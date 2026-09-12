@@ -1,0 +1,7 @@
+,age,household_size,farm_size_ha,yield_kg_last_season,estimated_income_kes,years_farming
+age,1.0,-0.01,-0.13,-0.06,-0.14,-0.08
+household_size,-0.01,1.0,-0.15,-0.01,-0.03,-0.06
+farm_size_ha,-0.13,-0.15,1.0,0.15,-0.07,-0.04
+yield_kg_last_season,-0.06,-0.01,0.15,1.0,-0.11,-0.01
+estimated_income_kes,-0.14,-0.03,-0.07,-0.11,1.0,-0.07
+years_farming,-0.08,-0.06,-0.04,-0.01,-0.07,1.0

@@ -1,0 +1,5077 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fab0dc14c929ba52c31118537b5a6b40 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fab0dc14c929ba52c31118537b5a6b40" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fab0dc14c929ba52c31118537b5a6b40 = L.map(
+                "map_fab0dc14c929ba52c31118537b5a6b40",
+                {
+                    center: [-0.31993582191780817, 37.30440100684932],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4faaf7acf15b94dafc5f621e508f745b = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4faaf7acf15b94dafc5f621e508f745b.addTo(map_fab0dc14c929ba52c31118537b5a6b40);
+        
+    
+            var marker_cluster_c28438d56868057b5024f6cbf46e25f1 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_26b312e0fd63060554bd742f5e8c2735 = L.marker(
+                [-0.56365, 38.270665],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_8954cf07832ce46cdf1bf670e9277fc1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_129deecf380d65a93404132db1b5f027 = $(`<div id="html_129deecf380d65a93404132db1b5f027" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0001<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.67 ha<br>     <b>Yield:</b> 210.6 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_8954cf07832ce46cdf1bf670e9277fc1.setContent(html_129deecf380d65a93404132db1b5f027);
+            
+        
+
+        marker_26b312e0fd63060554bd742f5e8c2735.bindPopup(popup_8954cf07832ce46cdf1bf670e9277fc1)
+        ;
+
+        
+    
+    
+            marker_26b312e0fd63060554bd742f5e8c2735.bindTooltip(
+                `<div>
+                     Maize - R0001
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bd531854f2c24785096680aae6e200b9 = L.marker(
+                [0.876786, 36.598905],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_13478b3a9ad80f7fb2630eb1705615cf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7e68fd597982730c7005b93c10158776 = $(`<div id="html_7e68fd597982730c7005b93c10158776" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0002<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.39 ha<br>     <b>Yield:</b> 151.5 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_13478b3a9ad80f7fb2630eb1705615cf.setContent(html_7e68fd597982730c7005b93c10158776);
+            
+        
+
+        marker_bd531854f2c24785096680aae6e200b9.bindPopup(popup_13478b3a9ad80f7fb2630eb1705615cf)
+        ;
+
+        
+    
+    
+            marker_bd531854f2c24785096680aae6e200b9.bindTooltip(
+                `<div>
+                     Maize - R0002
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fc28bc0e423febdac6fb605ba664df2b = L.marker(
+                [0.329985, 36.362237],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_468bf481418791e21ab8ec88f75e2dca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ada378e7c791d99e06a433435e53a5ee = $(`<div id="html_ada378e7c791d99e06a433435e53a5ee" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0003<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.09 ha<br>     <b>Yield:</b> 299.9 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_468bf481418791e21ab8ec88f75e2dca.setContent(html_ada378e7c791d99e06a433435e53a5ee);
+            
+        
+
+        marker_fc28bc0e423febdac6fb605ba664df2b.bindPopup(popup_468bf481418791e21ab8ec88f75e2dca)
+        ;
+
+        
+    
+    
+            marker_fc28bc0e423febdac6fb605ba664df2b.bindTooltip(
+                `<div>
+                     Maize - R0003
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_67e5ca152008379c85ce70b5de6571b7 = L.marker(
+                [-0.003354, 37.223632],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_c3b105bcc659fc242050d4d45a553100 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_18b56c7a2fd3b0bc21c99d6a082a54d7 = $(`<div id="html_18b56c7a2fd3b0bc21c99d6a082a54d7" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0004<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> nan ha<br>     <b>Yield:</b> 2690.0 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_c3b105bcc659fc242050d4d45a553100.setContent(html_18b56c7a2fd3b0bc21c99d6a082a54d7);
+            
+        
+
+        marker_67e5ca152008379c85ce70b5de6571b7.bindPopup(popup_c3b105bcc659fc242050d4d45a553100)
+        ;
+
+        
+    
+    
+            marker_67e5ca152008379c85ce70b5de6571b7.bindTooltip(
+                `<div>
+                     Maize - R0004
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c0e06b4fa949c43f844ab57e55e2a8b3 = L.marker(
+                [-1.109953, 38.464126],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_09f1e26835671f49e329b97460556456 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0b6563943aecb1444a5fc74feef31b49 = $(`<div id="html_0b6563943aecb1444a5fc74feef31b49" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0005<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.17 ha<br>     <b>Yield:</b> 164.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_09f1e26835671f49e329b97460556456.setContent(html_0b6563943aecb1444a5fc74feef31b49);
+            
+        
+
+        marker_c0e06b4fa949c43f844ab57e55e2a8b3.bindPopup(popup_09f1e26835671f49e329b97460556456)
+        ;
+
+        
+    
+    
+            marker_c0e06b4fa949c43f844ab57e55e2a8b3.bindTooltip(
+                `<div>
+                     Maize - R0005
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_04309ffa29763fafcf3990beb8b2663e = L.marker(
+                [-1.354791, 37.680339],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_6fa5355eedd58e9ee5ed9990769bccc5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e4d30a1d6a75e6d442e7553aac22c9ae = $(`<div id="html_e4d30a1d6a75e6d442e7553aac22c9ae" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0007<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.58 ha<br>     <b>Yield:</b> 207.7 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_6fa5355eedd58e9ee5ed9990769bccc5.setContent(html_e4d30a1d6a75e6d442e7553aac22c9ae);
+            
+        
+
+        marker_04309ffa29763fafcf3990beb8b2663e.bindPopup(popup_6fa5355eedd58e9ee5ed9990769bccc5)
+        ;
+
+        
+    
+    
+            marker_04309ffa29763fafcf3990beb8b2663e.bindTooltip(
+                `<div>
+                     Maize - R0007
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_986179cb74dc8c0826cec1a1dfdc7e1b = L.marker(
+                [0.66544, 37.904049],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_6e38c9a482a9c4dbe28b235e88a6def1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f035b2ca7c8f824a557b1c6e3f837be1 = $(`<div id="html_f035b2ca7c8f824a557b1c6e3f837be1" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0008<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 0.58 ha<br>     <b>Yield:</b> nan kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_6e38c9a482a9c4dbe28b235e88a6def1.setContent(html_f035b2ca7c8f824a557b1c6e3f837be1);
+            
+        
+
+        marker_986179cb74dc8c0826cec1a1dfdc7e1b.bindPopup(popup_6e38c9a482a9c4dbe28b235e88a6def1)
+        ;
+
+        
+    
+    
+            marker_986179cb74dc8c0826cec1a1dfdc7e1b.bindTooltip(
+                `<div>
+                     Beans - R0008
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5ce5ed14c44b8c300883cddcbdeca559 = L.marker(
+                [0.002788, 36.594094],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_cd16effba677aab90a4a52917529fa7e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c6b771d3819cd34fee829f3c35ab9998 = $(`<div id="html_c6b771d3819cd34fee829f3c35ab9998" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0009<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 2.98 ha<br>     <b>Yield:</b> 774.9 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_cd16effba677aab90a4a52917529fa7e.setContent(html_c6b771d3819cd34fee829f3c35ab9998);
+            
+        
+
+        marker_5ce5ed14c44b8c300883cddcbdeca559.bindPopup(popup_cd16effba677aab90a4a52917529fa7e)
+        ;
+
+        
+    
+    
+            marker_5ce5ed14c44b8c300883cddcbdeca559.bindTooltip(
+                `<div>
+                     Coffee - R0009
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ea3fa76c2f29d2ad94e3fc55f3f3d12d = L.marker(
+                [0.270181, 37.820541],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_8331aadecb0ea57260437555f7fc76d3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9bfb712f07ef92ca7c92b1e75e851b25 = $(`<div id="html_9bfb712f07ef92ca7c92b1e75e851b25" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0010<br>     <b>Crop:</b> Potatoes<br>     <b>Farm size:</b> 2.22 ha<br>     <b>Yield:</b> 354.2 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_8331aadecb0ea57260437555f7fc76d3.setContent(html_9bfb712f07ef92ca7c92b1e75e851b25);
+            
+        
+
+        marker_ea3fa76c2f29d2ad94e3fc55f3f3d12d.bindPopup(popup_8331aadecb0ea57260437555f7fc76d3)
+        ;
+
+        
+    
+    
+            marker_ea3fa76c2f29d2ad94e3fc55f3f3d12d.bindTooltip(
+                `<div>
+                     Potatoes - R0010
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1122a7769effc194ad0cfac0c6742a56 = L.marker(
+                [-1.448539, 36.919458],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_866f68ba1b17e46c12d091a6f2a7e917 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e86aa622f9130550e3bf6d42674c5282 = $(`<div id="html_e86aa622f9130550e3bf6d42674c5282" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0011<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.91 ha<br>     <b>Yield:</b> 1773.5 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_866f68ba1b17e46c12d091a6f2a7e917.setContent(html_e86aa622f9130550e3bf6d42674c5282);
+            
+        
+
+        marker_1122a7769effc194ad0cfac0c6742a56.bindPopup(popup_866f68ba1b17e46c12d091a6f2a7e917)
+        ;
+
+        
+    
+    
+            marker_1122a7769effc194ad0cfac0c6742a56.bindTooltip(
+                `<div>
+                     Maize - R0011
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_840c54b8ca42e3da12de02ab9f4b3a79 = L.marker(
+                [0.924775, 37.580765],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_48448575d6e1ab59c8678b1872e5bcf0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5d86f0714b41fc76f7107beece75c301 = $(`<div id="html_5d86f0714b41fc76f7107beece75c301" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0012<br>     <b>Crop:</b> Vegetables<br>     <b>Farm size:</b> 0.95 ha<br>     <b>Yield:</b> 2645.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_48448575d6e1ab59c8678b1872e5bcf0.setContent(html_5d86f0714b41fc76f7107beece75c301);
+            
+        
+
+        marker_840c54b8ca42e3da12de02ab9f4b3a79.bindPopup(popup_48448575d6e1ab59c8678b1872e5bcf0)
+        ;
+
+        
+    
+    
+            marker_840c54b8ca42e3da12de02ab9f4b3a79.bindTooltip(
+                `<div>
+                     Vegetables - R0012
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d98bef2c47c97bf07da58c12354e9b8a = L.marker(
+                [-0.969152, 37.339437],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_7b0e7f1156a749a12abfb71bcef37737 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_68e351d754e74451bb78a16a9f44be65 = $(`<div id="html_68e351d754e74451bb78a16a9f44be65" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0014<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.71 ha<br>     <b>Yield:</b> 359.7 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_7b0e7f1156a749a12abfb71bcef37737.setContent(html_68e351d754e74451bb78a16a9f44be65);
+            
+        
+
+        marker_d98bef2c47c97bf07da58c12354e9b8a.bindPopup(popup_7b0e7f1156a749a12abfb71bcef37737)
+        ;
+
+        
+    
+    
+            marker_d98bef2c47c97bf07da58c12354e9b8a.bindTooltip(
+                `<div>
+                     Maize - R0014
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_20ebd410a085eab0a43a4c5cf685740c = L.marker(
+                [-1.045438, 36.225724],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_9221c3a28c703dcdb2562ce7ec7dcf66 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bfadee11428391b7f5d614958320636b = $(`<div id="html_bfadee11428391b7f5d614958320636b" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0015<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 5.75 ha<br>     <b>Yield:</b> 701.5 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_9221c3a28c703dcdb2562ce7ec7dcf66.setContent(html_bfadee11428391b7f5d614958320636b);
+            
+        
+
+        marker_20ebd410a085eab0a43a4c5cf685740c.bindPopup(popup_9221c3a28c703dcdb2562ce7ec7dcf66)
+        ;
+
+        
+    
+    
+            marker_20ebd410a085eab0a43a4c5cf685740c.bindTooltip(
+                `<div>
+                     Maize - R0015
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9b6adf8f5c55a79fe66bc0c35181e814 = L.marker(
+                [-1.041489, 38.088256],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_c5c4337ee85c2c59763edd65eeeb8c9f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c02871b4fc6125827b78ff890f6c08ea = $(`<div id="html_c02871b4fc6125827b78ff890f6c08ea" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0016<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 1.8 ha<br>     <b>Yield:</b> 1832.6 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_c5c4337ee85c2c59763edd65eeeb8c9f.setContent(html_c02871b4fc6125827b78ff890f6c08ea);
+            
+        
+
+        marker_9b6adf8f5c55a79fe66bc0c35181e814.bindPopup(popup_c5c4337ee85c2c59763edd65eeeb8c9f)
+        ;
+
+        
+    
+    
+            marker_9b6adf8f5c55a79fe66bc0c35181e814.bindTooltip(
+                `<div>
+                     Beans - R0016
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9c42ff0f1f7e0a36119174180f332229 = L.marker(
+                [-0.739394, 36.80195],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_f60f77f9380c56f9265b0ce636a3fb1b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_787d4e0595506068eb0a6be431aed5ee = $(`<div id="html_787d4e0595506068eb0a6be431aed5ee" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0017<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.85 ha<br>     <b>Yield:</b> 441.9 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_f60f77f9380c56f9265b0ce636a3fb1b.setContent(html_787d4e0595506068eb0a6be431aed5ee);
+            
+        
+
+        marker_9c42ff0f1f7e0a36119174180f332229.bindPopup(popup_f60f77f9380c56f9265b0ce636a3fb1b)
+        ;
+
+        
+    
+    
+            marker_9c42ff0f1f7e0a36119174180f332229.bindTooltip(
+                `<div>
+                     Maize - R0017
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_70b88bbd942d050aa5960531eefd27f4 = L.marker(
+                [-0.188109, 36.466296],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_168c72f5a78c41502d1603b16092a5a7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_edf7d245f442579979a99afbcec92852 = $(`<div id="html_edf7d245f442579979a99afbcec92852" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0018<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 2.33 ha<br>     <b>Yield:</b> 653.3 kg<br>     <b>Irrigation:</b> Sometimes     </div>`)[0];
+                popup_168c72f5a78c41502d1603b16092a5a7.setContent(html_edf7d245f442579979a99afbcec92852);
+            
+        
+
+        marker_70b88bbd942d050aa5960531eefd27f4.bindPopup(popup_168c72f5a78c41502d1603b16092a5a7)
+        ;
+
+        
+    
+    
+            marker_70b88bbd942d050aa5960531eefd27f4.bindTooltip(
+                `<div>
+                     Maize - R0018
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e7047ca1bcb7fbc80ab056ba9ddac364 = L.marker(
+                [-0.420137, 36.101938],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_8cf52994c447e37ec5eadb628a6ceff0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3d5a2af5b08a104af9f45418ddf645cf = $(`<div id="html_3d5a2af5b08a104af9f45418ddf645cf" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0019<br>     <b>Crop:</b> Vegetables<br>     <b>Farm size:</b> 0.85 ha<br>     <b>Yield:</b> 234.8 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_8cf52994c447e37ec5eadb628a6ceff0.setContent(html_3d5a2af5b08a104af9f45418ddf645cf);
+            
+        
+
+        marker_e7047ca1bcb7fbc80ab056ba9ddac364.bindPopup(popup_8cf52994c447e37ec5eadb628a6ceff0)
+        ;
+
+        
+    
+    
+            marker_e7047ca1bcb7fbc80ab056ba9ddac364.bindTooltip(
+                `<div>
+                     Vegetables - R0019
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1bba6123292a290d6cccebd7fcc9764f = L.marker(
+                [-0.771927, 37.477232],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_a195c73ab0fa4b62289b8ee99bfff007 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_39ba532a98c8313596e65296840d637b = $(`<div id="html_39ba532a98c8313596e65296840d637b" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0020<br>     <b>Crop:</b> Potatoes<br>     <b>Farm size:</b> nan ha<br>     <b>Yield:</b> 167.4 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_a195c73ab0fa4b62289b8ee99bfff007.setContent(html_39ba532a98c8313596e65296840d637b);
+            
+        
+
+        marker_1bba6123292a290d6cccebd7fcc9764f.bindPopup(popup_a195c73ab0fa4b62289b8ee99bfff007)
+        ;
+
+        
+    
+    
+            marker_1bba6123292a290d6cccebd7fcc9764f.bindTooltip(
+                `<div>
+                     Potatoes - R0020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_090baa4a29ddc80ee95184e140aa4f93 = L.marker(
+                [0.029632, 37.693911],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_4079e2570b8fc27015406cd0ebd07417 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aacfab6d77e85e757c5795666a624eb5 = $(`<div id="html_aacfab6d77e85e757c5795666a624eb5" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0021<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.48 ha<br>     <b>Yield:</b> 2442.7 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_4079e2570b8fc27015406cd0ebd07417.setContent(html_aacfab6d77e85e757c5795666a624eb5);
+            
+        
+
+        marker_090baa4a29ddc80ee95184e140aa4f93.bindPopup(popup_4079e2570b8fc27015406cd0ebd07417)
+        ;
+
+        
+    
+    
+            marker_090baa4a29ddc80ee95184e140aa4f93.bindTooltip(
+                `<div>
+                     Maize - R0021
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_940f11e06e9370f0b92c0eb6ccf042b6 = L.marker(
+                [-1.151265, 36.04147],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_2ce01ed6cb24a9fe0af70b5a9320c096 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_73b3e34fc7b4c20a53c2ab223e2c9b17 = $(`<div id="html_73b3e34fc7b4c20a53c2ab223e2c9b17" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0022<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 2.89 ha<br>     <b>Yield:</b> 128.8 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_2ce01ed6cb24a9fe0af70b5a9320c096.setContent(html_73b3e34fc7b4c20a53c2ab223e2c9b17);
+            
+        
+
+        marker_940f11e06e9370f0b92c0eb6ccf042b6.bindPopup(popup_2ce01ed6cb24a9fe0af70b5a9320c096)
+        ;
+
+        
+    
+    
+            marker_940f11e06e9370f0b92c0eb6ccf042b6.bindTooltip(
+                `<div>
+                     Maize - R0022
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_680d7e334f6cc204ae15638f62520cf8 = L.marker(
+                [-0.769638, 37.280233],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_ee8c9004b9ae3dd490b8ba83617873de = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_23b53cdb8be60a2eed13a0b9df269078 = $(`<div id="html_23b53cdb8be60a2eed13a0b9df269078" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0023<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 1.15 ha<br>     <b>Yield:</b> 5408.7 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_ee8c9004b9ae3dd490b8ba83617873de.setContent(html_23b53cdb8be60a2eed13a0b9df269078);
+            
+        
+
+        marker_680d7e334f6cc204ae15638f62520cf8.bindPopup(popup_ee8c9004b9ae3dd490b8ba83617873de)
+        ;
+
+        
+    
+    
+            marker_680d7e334f6cc204ae15638f62520cf8.bindTooltip(
+                `<div>
+                     Beans - R0023
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fb59e1b5f6c578dc2fbb2ccfdfd873b7 = L.marker(
+                [-0.359825, 37.612932],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_488560d37ddb2d64425a45641377af43 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_44cd3cd46e32e1fac376b0e20d455506 = $(`<div id="html_44cd3cd46e32e1fac376b0e20d455506" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0025<br>     <b>Crop:</b> Tea<br>     <b>Farm size:</b> 1.86 ha<br>     <b>Yield:</b> 1226.6 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_488560d37ddb2d64425a45641377af43.setContent(html_44cd3cd46e32e1fac376b0e20d455506);
+            
+        
+
+        marker_fb59e1b5f6c578dc2fbb2ccfdfd873b7.bindPopup(popup_488560d37ddb2d64425a45641377af43)
+        ;
+
+        
+    
+    
+            marker_fb59e1b5f6c578dc2fbb2ccfdfd873b7.bindTooltip(
+                `<div>
+                     Tea - R0025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6cd1916837abfb908439e0e0fe99b520 = L.marker(
+                [0.46294, 36.435916],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_b2a2cb5171f1c30a1c2806b58e75a39f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0f4bca4d65bc099178d52d8a55895a91 = $(`<div id="html_0f4bca4d65bc099178d52d8a55895a91" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0026<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 7.74 ha<br>     <b>Yield:</b> 1116.5 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_b2a2cb5171f1c30a1c2806b58e75a39f.setContent(html_0f4bca4d65bc099178d52d8a55895a91);
+            
+        
+
+        marker_6cd1916837abfb908439e0e0fe99b520.bindPopup(popup_b2a2cb5171f1c30a1c2806b58e75a39f)
+        ;
+
+        
+    
+    
+            marker_6cd1916837abfb908439e0e0fe99b520.bindTooltip(
+                `<div>
+                     Beans - R0026
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_da1ad3449938dd9eb12b16aa86d9463c = L.marker(
+                [-1.000816, 37.727344],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_352dc200fff87366d31e929f7936c596 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_99fe37475b37fc69b41c23eb1c8f3271 = $(`<div id="html_99fe37475b37fc69b41c23eb1c8f3271" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0027<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 1.0 ha<br>     <b>Yield:</b> 529.8 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_352dc200fff87366d31e929f7936c596.setContent(html_99fe37475b37fc69b41c23eb1c8f3271);
+            
+        
+
+        marker_da1ad3449938dd9eb12b16aa86d9463c.bindPopup(popup_352dc200fff87366d31e929f7936c596)
+        ;
+
+        
+    
+    
+            marker_da1ad3449938dd9eb12b16aa86d9463c.bindTooltip(
+                `<div>
+                     Beans - R0027
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_69213175924e72bd762ad930486f0448 = L.marker(
+                [-0.214414, 36.966838],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_0aceb2344958faac14f34a218aab3f54 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_65b59f5c64bab97008f094c2e2df512d = $(`<div id="html_65b59f5c64bab97008f094c2e2df512d" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0028<br>     <b>Crop:</b> Potatoes<br>     <b>Farm size:</b> 1.59 ha<br>     <b>Yield:</b> 946.6 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_0aceb2344958faac14f34a218aab3f54.setContent(html_65b59f5c64bab97008f094c2e2df512d);
+            
+        
+
+        marker_69213175924e72bd762ad930486f0448.bindPopup(popup_0aceb2344958faac14f34a218aab3f54)
+        ;
+
+        
+    
+    
+            marker_69213175924e72bd762ad930486f0448.bindTooltip(
+                `<div>
+                     Potatoes - R0028
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e7bae476014342d8e37d9d20dbf92496 = L.marker(
+                [-0.018964, 38.341825],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_dee3b00616976ee610cf025de759f8ab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dc92983eaf3e470ab560149bd212d54a = $(`<div id="html_dc92983eaf3e470ab560149bd212d54a" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0029<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.59 ha<br>     <b>Yield:</b> nan kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_dee3b00616976ee610cf025de759f8ab.setContent(html_dc92983eaf3e470ab560149bd212d54a);
+            
+        
+
+        marker_e7bae476014342d8e37d9d20dbf92496.bindPopup(popup_dee3b00616976ee610cf025de759f8ab)
+        ;
+
+        
+    
+    
+            marker_e7bae476014342d8e37d9d20dbf92496.bindTooltip(
+                `<div>
+                     Maize - R0029
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_95de443b64fa747e6fd39079a79606aa = L.marker(
+                [-1.383874, 36.343802],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_144b3a5f63efb51314225f2696678235 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c2c785071e56b685aa21511b4c1930ee = $(`<div id="html_c2c785071e56b685aa21511b4c1930ee" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0030<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.88 ha<br>     <b>Yield:</b> 1094.2 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_144b3a5f63efb51314225f2696678235.setContent(html_c2c785071e56b685aa21511b4c1930ee);
+            
+        
+
+        marker_95de443b64fa747e6fd39079a79606aa.bindPopup(popup_144b3a5f63efb51314225f2696678235)
+        ;
+
+        
+    
+    
+            marker_95de443b64fa747e6fd39079a79606aa.bindTooltip(
+                `<div>
+                     Maize - R0030
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_319fdd6ab65050d14a3f72d6d89c09e9 = L.marker(
+                [0.018862, 36.852666],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_4e69316ee5ea3498c7ae499a0e5b9009 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7d273b045ac309493583c87077fddf3b = $(`<div id="html_7d273b045ac309493583c87077fddf3b" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0031<br>     <b>Crop:</b> Potatoes<br>     <b>Farm size:</b> 2.21 ha<br>     <b>Yield:</b> 645.3 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_4e69316ee5ea3498c7ae499a0e5b9009.setContent(html_7d273b045ac309493583c87077fddf3b);
+            
+        
+
+        marker_319fdd6ab65050d14a3f72d6d89c09e9.bindPopup(popup_4e69316ee5ea3498c7ae499a0e5b9009)
+        ;
+
+        
+    
+    
+            marker_319fdd6ab65050d14a3f72d6d89c09e9.bindTooltip(
+                `<div>
+                     Potatoes - R0031
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_28eccfb6a3b888552dc75780286e5fba = L.marker(
+                [-1.07369, 36.283684],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_57a1a1aff61903b1577a23b885b117a1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fca4db6a5633bf51effeac48ed898410 = $(`<div id="html_fca4db6a5633bf51effeac48ed898410" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0032<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 3.33 ha<br>     <b>Yield:</b> 282.8 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_57a1a1aff61903b1577a23b885b117a1.setContent(html_fca4db6a5633bf51effeac48ed898410);
+            
+        
+
+        marker_28eccfb6a3b888552dc75780286e5fba.bindPopup(popup_57a1a1aff61903b1577a23b885b117a1)
+        ;
+
+        
+    
+    
+            marker_28eccfb6a3b888552dc75780286e5fba.bindTooltip(
+                `<div>
+                     Maize - R0032
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e315ed53719a92bcda2de780b174a374 = L.marker(
+                [-1.337371, 38.311734],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_c8c1f60655a4e3c9b19191c13e22821b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2613c39cc1e786c670cdf1aed3bcbce1 = $(`<div id="html_2613c39cc1e786c670cdf1aed3bcbce1" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0033<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 14.47 ha<br>     <b>Yield:</b> 303.8 kg<br>     <b>Irrigation:</b> nan     </div>`)[0];
+                popup_c8c1f60655a4e3c9b19191c13e22821b.setContent(html_2613c39cc1e786c670cdf1aed3bcbce1);
+            
+        
+
+        marker_e315ed53719a92bcda2de780b174a374.bindPopup(popup_c8c1f60655a4e3c9b19191c13e22821b)
+        ;
+
+        
+    
+    
+            marker_e315ed53719a92bcda2de780b174a374.bindTooltip(
+                `<div>
+                     Coffee - R0033
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a86d07a2fc4f1fd36505940c133f6084 = L.marker(
+                [0.872214, 38.193348],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_27789127c97373b0ed43190e9bb6efb6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3cdebb3230be8083c38c41389b209e63 = $(`<div id="html_3cdebb3230be8083c38c41389b209e63" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0034<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 1.25 ha<br>     <b>Yield:</b> 274.3 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_27789127c97373b0ed43190e9bb6efb6.setContent(html_3cdebb3230be8083c38c41389b209e63);
+            
+        
+
+        marker_a86d07a2fc4f1fd36505940c133f6084.bindPopup(popup_27789127c97373b0ed43190e9bb6efb6)
+        ;
+
+        
+    
+    
+            marker_a86d07a2fc4f1fd36505940c133f6084.bindTooltip(
+                `<div>
+                     Coffee - R0034
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2825950fb03744a5d608a08c093a79f4 = L.marker(
+                [0.91408, 36.644854],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_8dd336194cb7fd164a19cdc076d09853 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dcfc978f9dfcdf56b445072a53f8d311 = $(`<div id="html_dcfc978f9dfcdf56b445072a53f8d311" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0035<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.64 ha<br>     <b>Yield:</b> 1593.7 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_8dd336194cb7fd164a19cdc076d09853.setContent(html_dcfc978f9dfcdf56b445072a53f8d311);
+            
+        
+
+        marker_2825950fb03744a5d608a08c093a79f4.bindPopup(popup_8dd336194cb7fd164a19cdc076d09853)
+        ;
+
+        
+    
+    
+            marker_2825950fb03744a5d608a08c093a79f4.bindTooltip(
+                `<div>
+                     Maize - R0035
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f3501d0498ade682532aac7ac53c66ca = L.marker(
+                [0.520993, 37.64996],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_33c82d09be158013a2bf66e08134648c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b04eb3b13e8bf4c4e9c96cca9d4f5cff = $(`<div id="html_b04eb3b13e8bf4c4e9c96cca9d4f5cff" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0036<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 2.47 ha<br>     <b>Yield:</b> 381.6 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_33c82d09be158013a2bf66e08134648c.setContent(html_b04eb3b13e8bf4c4e9c96cca9d4f5cff);
+            
+        
+
+        marker_f3501d0498ade682532aac7ac53c66ca.bindPopup(popup_33c82d09be158013a2bf66e08134648c)
+        ;
+
+        
+    
+    
+            marker_f3501d0498ade682532aac7ac53c66ca.bindTooltip(
+                `<div>
+                     Beans - R0036
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dc0ebe07a73950599a8cc8aedd8addd0 = L.marker(
+                [-0.738466, 38.043056],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_8820a4ddbc8e5a32ec8837e4301dd30b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d89881b9bf00965017a10a6197fb4210 = $(`<div id="html_d89881b9bf00965017a10a6197fb4210" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0037<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 0.55 ha<br>     <b>Yield:</b> 119.0 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_8820a4ddbc8e5a32ec8837e4301dd30b.setContent(html_d89881b9bf00965017a10a6197fb4210);
+            
+        
+
+        marker_dc0ebe07a73950599a8cc8aedd8addd0.bindPopup(popup_8820a4ddbc8e5a32ec8837e4301dd30b)
+        ;
+
+        
+    
+    
+            marker_dc0ebe07a73950599a8cc8aedd8addd0.bindTooltip(
+                `<div>
+                     Coffee - R0037
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e8afa5bf7889497c33a62ac09f44d0f9 = L.marker(
+                [-1.25582, 37.388002],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_c23d294529e94439b93f2d6e5f328dd3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b66f144377e82b30f249e929f14070f9 = $(`<div id="html_b66f144377e82b30f249e929f14070f9" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0038<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 2.12 ha<br>     <b>Yield:</b> 950.7 kg<br>     <b>Irrigation:</b> Sometimes     </div>`)[0];
+                popup_c23d294529e94439b93f2d6e5f328dd3.setContent(html_b66f144377e82b30f249e929f14070f9);
+            
+        
+
+        marker_e8afa5bf7889497c33a62ac09f44d0f9.bindPopup(popup_c23d294529e94439b93f2d6e5f328dd3)
+        ;
+
+        
+    
+    
+            marker_e8afa5bf7889497c33a62ac09f44d0f9.bindTooltip(
+                `<div>
+                     Maize - R0038
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bc544f0af0c8f0866f41451cb87c4195 = L.marker(
+                [0.210583, 37.324126],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_2b191f9f654297affcae11ad310ee129 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_898d770dca276e7f8c7fbcc783b81e96 = $(`<div id="html_898d770dca276e7f8c7fbcc783b81e96" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0039<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.9 ha<br>     <b>Yield:</b> 2599.5 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_2b191f9f654297affcae11ad310ee129.setContent(html_898d770dca276e7f8c7fbcc783b81e96);
+            
+        
+
+        marker_bc544f0af0c8f0866f41451cb87c4195.bindPopup(popup_2b191f9f654297affcae11ad310ee129)
+        ;
+
+        
+    
+    
+            marker_bc544f0af0c8f0866f41451cb87c4195.bindTooltip(
+                `<div>
+                     Maize - R0039
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a6e72979d667dbc2bc099b52421d9c58 = L.marker(
+                [-0.399619, 36.604631],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_893740f0e628620a9f88afc4b760bdbd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_72ea5316cec739cb204796e3e19ee257 = $(`<div id="html_72ea5316cec739cb204796e3e19ee257" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0040<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 1.6 ha<br>     <b>Yield:</b> 1333.8 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_893740f0e628620a9f88afc4b760bdbd.setContent(html_72ea5316cec739cb204796e3e19ee257);
+            
+        
+
+        marker_a6e72979d667dbc2bc099b52421d9c58.bindPopup(popup_893740f0e628620a9f88afc4b760bdbd)
+        ;
+
+        
+    
+    
+            marker_a6e72979d667dbc2bc099b52421d9c58.bindTooltip(
+                `<div>
+                     Beans - R0040
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2dc19076ab88aa57e0ddbaefdf9fb6ab = L.marker(
+                [-1.194904, 36.232757],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_3de186a596b74fcdfa78ea5b1731b500 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_31b975b611d736b25ecca6032d1d1f19 = $(`<div id="html_31b975b611d736b25ecca6032d1d1f19" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0041<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 3.23 ha<br>     <b>Yield:</b> 386.5 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_3de186a596b74fcdfa78ea5b1731b500.setContent(html_31b975b611d736b25ecca6032d1d1f19);
+            
+        
+
+        marker_2dc19076ab88aa57e0ddbaefdf9fb6ab.bindPopup(popup_3de186a596b74fcdfa78ea5b1731b500)
+        ;
+
+        
+    
+    
+            marker_2dc19076ab88aa57e0ddbaefdf9fb6ab.bindTooltip(
+                `<div>
+                     Maize - R0041
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_09ea5f420e092010f41bd66b05c21de0 = L.marker(
+                [-0.262058, 38.243039],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_370071eb1b80297592ed6b2745a59ac4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c1c03a5c719a59b3435b393f3994f4fe = $(`<div id="html_c1c03a5c719a59b3435b393f3994f4fe" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0042<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> nan ha<br>     <b>Yield:</b> 159.5 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_370071eb1b80297592ed6b2745a59ac4.setContent(html_c1c03a5c719a59b3435b393f3994f4fe);
+            
+        
+
+        marker_09ea5f420e092010f41bd66b05c21de0.bindPopup(popup_370071eb1b80297592ed6b2745a59ac4)
+        ;
+
+        
+    
+    
+            marker_09ea5f420e092010f41bd66b05c21de0.bindTooltip(
+                `<div>
+                     Beans - R0042
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fb535de6b0d340323acda3438ef41647 = L.marker(
+                [-1.414029, 38.251045],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_28d762743c8de2cb7bac32bcdf2ee8c8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_68c7a8d77c43846af4b8fccac681d8b1 = $(`<div id="html_68c7a8d77c43846af4b8fccac681d8b1" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0043<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 2.85 ha<br>     <b>Yield:</b> 589.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_28d762743c8de2cb7bac32bcdf2ee8c8.setContent(html_68c7a8d77c43846af4b8fccac681d8b1);
+            
+        
+
+        marker_fb535de6b0d340323acda3438ef41647.bindPopup(popup_28d762743c8de2cb7bac32bcdf2ee8c8)
+        ;
+
+        
+    
+    
+            marker_fb535de6b0d340323acda3438ef41647.bindTooltip(
+                `<div>
+                     Maize - R0043
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c9f1ed47edafa92f63a4fbd8a8b544f8 = L.marker(
+                [0.773301, 37.582754],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_29647e7ea434110ce5ee9da107047179 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fca46018fca088abdfa8415c7a0d1b43 = $(`<div id="html_fca46018fca088abdfa8415c7a0d1b43" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0044<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 2.71 ha<br>     <b>Yield:</b> 576.3 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_29647e7ea434110ce5ee9da107047179.setContent(html_fca46018fca088abdfa8415c7a0d1b43);
+            
+        
+
+        marker_c9f1ed47edafa92f63a4fbd8a8b544f8.bindPopup(popup_29647e7ea434110ce5ee9da107047179)
+        ;
+
+        
+    
+    
+            marker_c9f1ed47edafa92f63a4fbd8a8b544f8.bindTooltip(
+                `<div>
+                     Beans - R0044
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_df3508203554966549513a486786159d = L.marker(
+                [-0.85305, 36.847574],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_2816bcba9c6e095afdcaa8b82c6cfad3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5310f6d10339a441a6da3113ded2078a = $(`<div id="html_5310f6d10339a441a6da3113ded2078a" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0045<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.3 ha<br>     <b>Yield:</b> 278.0 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_2816bcba9c6e095afdcaa8b82c6cfad3.setContent(html_5310f6d10339a441a6da3113ded2078a);
+            
+        
+
+        marker_df3508203554966549513a486786159d.bindPopup(popup_2816bcba9c6e095afdcaa8b82c6cfad3)
+        ;
+
+        
+    
+    
+            marker_df3508203554966549513a486786159d.bindTooltip(
+                `<div>
+                     Maize - R0045
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d7a817c0c612022fa072d5361c8f7cf2 = L.marker(
+                [-0.720722, 37.814889],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_56580ecb283839c02ee73a652d3c2121 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6d7b24e1c16e16938fc7933c7f37ce8a = $(`<div id="html_6d7b24e1c16e16938fc7933c7f37ce8a" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0047<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 0.39 ha<br>     <b>Yield:</b> 3505.1 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_56580ecb283839c02ee73a652d3c2121.setContent(html_6d7b24e1c16e16938fc7933c7f37ce8a);
+            
+        
+
+        marker_d7a817c0c612022fa072d5361c8f7cf2.bindPopup(popup_56580ecb283839c02ee73a652d3c2121)
+        ;
+
+        
+    
+    
+            marker_d7a817c0c612022fa072d5361c8f7cf2.bindTooltip(
+                `<div>
+                     Coffee - R0047
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_93c278ee9c141940f916f4939ed25e61 = L.marker(
+                [-0.19983, 38.242776],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_2452b68b373dfe5d4b2de234e131dca8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_15ca3c0b7875b65671c41d4f7e976a90 = $(`<div id="html_15ca3c0b7875b65671c41d4f7e976a90" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0048<br>     <b>Crop:</b> Tea<br>     <b>Farm size:</b> 6.7 ha<br>     <b>Yield:</b> 812.5 kg<br>     <b>Irrigation:</b> Sometimes     </div>`)[0];
+                popup_2452b68b373dfe5d4b2de234e131dca8.setContent(html_15ca3c0b7875b65671c41d4f7e976a90);
+            
+        
+
+        marker_93c278ee9c141940f916f4939ed25e61.bindPopup(popup_2452b68b373dfe5d4b2de234e131dca8)
+        ;
+
+        
+    
+    
+            marker_93c278ee9c141940f916f4939ed25e61.bindTooltip(
+                `<div>
+                     Tea - R0048
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ad49c516afa74c31815ae84b666be0ee = L.marker(
+                [-0.133224, 38.217716],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_d2a59ed51c8d2a9a71519821040618ca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cc2668db756f7aa6e8031a37ec8ab964 = $(`<div id="html_cc2668db756f7aa6e8031a37ec8ab964" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0049<br>     <b>Crop:</b> Vegetables<br>     <b>Farm size:</b> 1.24 ha<br>     <b>Yield:</b> 768.5 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_d2a59ed51c8d2a9a71519821040618ca.setContent(html_cc2668db756f7aa6e8031a37ec8ab964);
+            
+        
+
+        marker_ad49c516afa74c31815ae84b666be0ee.bindPopup(popup_d2a59ed51c8d2a9a71519821040618ca)
+        ;
+
+        
+    
+    
+            marker_ad49c516afa74c31815ae84b666be0ee.bindTooltip(
+                `<div>
+                     Vegetables - R0049
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_77f0773e524d287417e0d5b8aa606d9e = L.marker(
+                [-1.037864, 37.949689],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_f4b8f7ba2e6773edcc08dc5ea91cf055 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9f6f2bfd44f61f840a15ae5ef4614601 = $(`<div id="html_9f6f2bfd44f61f840a15ae5ef4614601" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0050<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 5.61 ha<br>     <b>Yield:</b> 286.1 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_f4b8f7ba2e6773edcc08dc5ea91cf055.setContent(html_9f6f2bfd44f61f840a15ae5ef4614601);
+            
+        
+
+        marker_77f0773e524d287417e0d5b8aa606d9e.bindPopup(popup_f4b8f7ba2e6773edcc08dc5ea91cf055)
+        ;
+
+        
+    
+    
+            marker_77f0773e524d287417e0d5b8aa606d9e.bindTooltip(
+                `<div>
+                     Coffee - R0050
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d1ae2b3a75c4027055206e906ac569a9 = L.marker(
+                [0.923962, 37.605079],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_3235d612c2d9320b72dad2216e6648de = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_69dd5443c2d9070594dec08d6ccc0414 = $(`<div id="html_69dd5443c2d9070594dec08d6ccc0414" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0051<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.37 ha<br>     <b>Yield:</b> 2339.5 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_3235d612c2d9320b72dad2216e6648de.setContent(html_69dd5443c2d9070594dec08d6ccc0414);
+            
+        
+
+        marker_d1ae2b3a75c4027055206e906ac569a9.bindPopup(popup_3235d612c2d9320b72dad2216e6648de)
+        ;
+
+        
+    
+    
+            marker_d1ae2b3a75c4027055206e906ac569a9.bindTooltip(
+                `<div>
+                     Maize - R0051
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c2ccdb247eeaa62f3859b760ed6494db = L.marker(
+                [0.437832, 36.21035],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_fe6fc8f59b4659a2aeee507621daee9c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_21bc22bb773eb955d7165c0c6ec86db3 = $(`<div id="html_21bc22bb773eb955d7165c0c6ec86db3" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0052<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 0.85 ha<br>     <b>Yield:</b> 621.6 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_fe6fc8f59b4659a2aeee507621daee9c.setContent(html_21bc22bb773eb955d7165c0c6ec86db3);
+            
+        
+
+        marker_c2ccdb247eeaa62f3859b760ed6494db.bindPopup(popup_fe6fc8f59b4659a2aeee507621daee9c)
+        ;
+
+        
+    
+    
+            marker_c2ccdb247eeaa62f3859b760ed6494db.bindTooltip(
+                `<div>
+                     Coffee - R0052
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d9cb713ecaa347b3f3adc49d46dbd3ac = L.marker(
+                [0.848747, 36.404072],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_472ff86688f1b5f66c33a1a0b99befa9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e9c3c31a7b15e6bd1bac7c4142a0cef6 = $(`<div id="html_e9c3c31a7b15e6bd1bac7c4142a0cef6" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0053<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 2.56 ha<br>     <b>Yield:</b> 395.0 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_472ff86688f1b5f66c33a1a0b99befa9.setContent(html_e9c3c31a7b15e6bd1bac7c4142a0cef6);
+            
+        
+
+        marker_d9cb713ecaa347b3f3adc49d46dbd3ac.bindPopup(popup_472ff86688f1b5f66c33a1a0b99befa9)
+        ;
+
+        
+    
+    
+            marker_d9cb713ecaa347b3f3adc49d46dbd3ac.bindTooltip(
+                `<div>
+                     Coffee - R0053
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ec4ffefdfcc8e0074ab3ea9f80c83b86 = L.marker(
+                [0.737068, 38.246385],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_4025bd131ad1e3557e6f260f7eb3a5d5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_486733d8b212deb52eaabe50024415d5 = $(`<div id="html_486733d8b212deb52eaabe50024415d5" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0054<br>     <b>Crop:</b> Potatoes<br>     <b>Farm size:</b> 1.56 ha<br>     <b>Yield:</b> 704.4 kg<br>     <b>Irrigation:</b> Sometimes     </div>`)[0];
+                popup_4025bd131ad1e3557e6f260f7eb3a5d5.setContent(html_486733d8b212deb52eaabe50024415d5);
+            
+        
+
+        marker_ec4ffefdfcc8e0074ab3ea9f80c83b86.bindPopup(popup_4025bd131ad1e3557e6f260f7eb3a5d5)
+        ;
+
+        
+    
+    
+            marker_ec4ffefdfcc8e0074ab3ea9f80c83b86.bindTooltip(
+                `<div>
+                     Potatoes - R0054
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_249d0c853b59d8fb3d5ecb9a6c71f15b = L.marker(
+                [-0.00525, 37.516073],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_e39b9f93f271df859cc9427dd51909da = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ea689e239b16d7075f8d56a7a156fdbb = $(`<div id="html_ea689e239b16d7075f8d56a7a156fdbb" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0055<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 2.07 ha<br>     <b>Yield:</b> 1017.2 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_e39b9f93f271df859cc9427dd51909da.setContent(html_ea689e239b16d7075f8d56a7a156fdbb);
+            
+        
+
+        marker_249d0c853b59d8fb3d5ecb9a6c71f15b.bindPopup(popup_e39b9f93f271df859cc9427dd51909da)
+        ;
+
+        
+    
+    
+            marker_249d0c853b59d8fb3d5ecb9a6c71f15b.bindTooltip(
+                `<div>
+                     Beans - R0055
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eb55d4a163f76deff278996db51b60bf = L.marker(
+                [0.804686, 36.022993],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_5517c2f0bf742494c2ce6319e656936e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b8406f711a9646af88a8c22294bf2d50 = $(`<div id="html_b8406f711a9646af88a8c22294bf2d50" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0056<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.5 ha<br>     <b>Yield:</b> 753.9 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_5517c2f0bf742494c2ce6319e656936e.setContent(html_b8406f711a9646af88a8c22294bf2d50);
+            
+        
+
+        marker_eb55d4a163f76deff278996db51b60bf.bindPopup(popup_5517c2f0bf742494c2ce6319e656936e)
+        ;
+
+        
+    
+    
+            marker_eb55d4a163f76deff278996db51b60bf.bindTooltip(
+                `<div>
+                     Maize - R0056
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d215ab7fd350d4e88ffeb1f551cd27dc = L.marker(
+                [-1.278769, 36.253679],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_0b1421cfb73027d13a11be1dcc2fa7d4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b552cf9d08bdfd36b89c9e8204acca70 = $(`<div id="html_b552cf9d08bdfd36b89c9e8204acca70" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0057<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 4.06 ha<br>     <b>Yield:</b> 1969.5 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_0b1421cfb73027d13a11be1dcc2fa7d4.setContent(html_b552cf9d08bdfd36b89c9e8204acca70);
+            
+        
+
+        marker_d215ab7fd350d4e88ffeb1f551cd27dc.bindPopup(popup_0b1421cfb73027d13a11be1dcc2fa7d4)
+        ;
+
+        
+    
+    
+            marker_d215ab7fd350d4e88ffeb1f551cd27dc.bindTooltip(
+                `<div>
+                     Maize - R0057
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a11362eda2853e7c3d8bee9a01393d46 = L.marker(
+                [-1.010043, 37.658754],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_b3773afa0ac33c0a5a00d01ce10ef42f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_60338aa3e855b54fee0fd8e2306630a7 = $(`<div id="html_60338aa3e855b54fee0fd8e2306630a7" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0058<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 2.51 ha<br>     <b>Yield:</b> 939.7 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_b3773afa0ac33c0a5a00d01ce10ef42f.setContent(html_60338aa3e855b54fee0fd8e2306630a7);
+            
+        
+
+        marker_a11362eda2853e7c3d8bee9a01393d46.bindPopup(popup_b3773afa0ac33c0a5a00d01ce10ef42f)
+        ;
+
+        
+    
+    
+            marker_a11362eda2853e7c3d8bee9a01393d46.bindTooltip(
+                `<div>
+                     Beans - R0058
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d1e70913b2c813b0685b5651687c4d28 = L.marker(
+                [-1.386932, 36.012654],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_d39ac345586032c5043d21a0daaabf3c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d11e88eddf3fb732620487aa9ab75988 = $(`<div id="html_d11e88eddf3fb732620487aa9ab75988" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0059<br>     <b>Crop:</b> Tea<br>     <b>Farm size:</b> 1.86 ha<br>     <b>Yield:</b> 515.1 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_d39ac345586032c5043d21a0daaabf3c.setContent(html_d11e88eddf3fb732620487aa9ab75988);
+            
+        
+
+        marker_d1e70913b2c813b0685b5651687c4d28.bindPopup(popup_d39ac345586032c5043d21a0daaabf3c)
+        ;
+
+        
+    
+    
+            marker_d1e70913b2c813b0685b5651687c4d28.bindTooltip(
+                `<div>
+                     Tea - R0059
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8514c02033bd3bfff5403db144e199c4 = L.marker(
+                [-0.686674, 36.40202],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_4bb0a9e558befe5c2fff87ea771d6832 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8f217226b419ba5866f5f6ab574616cd = $(`<div id="html_8f217226b419ba5866f5f6ab574616cd" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0060<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 0.78 ha<br>     <b>Yield:</b> 954.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_4bb0a9e558befe5c2fff87ea771d6832.setContent(html_8f217226b419ba5866f5f6ab574616cd);
+            
+        
+
+        marker_8514c02033bd3bfff5403db144e199c4.bindPopup(popup_4bb0a9e558befe5c2fff87ea771d6832)
+        ;
+
+        
+    
+    
+            marker_8514c02033bd3bfff5403db144e199c4.bindTooltip(
+                `<div>
+                     Coffee - R0060
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e342a29d15865d28a6bcf7bc2dd753e3 = L.marker(
+                [-0.528307, 37.371834],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_8f28bc5f51988da3b130d0236a3fdc24 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_daf5bd6ce3bf1e6ed7d39eb3aa761cf8 = $(`<div id="html_daf5bd6ce3bf1e6ed7d39eb3aa761cf8" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0061<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 1.75 ha<br>     <b>Yield:</b> 1042.8 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_8f28bc5f51988da3b130d0236a3fdc24.setContent(html_daf5bd6ce3bf1e6ed7d39eb3aa761cf8);
+            
+        
+
+        marker_e342a29d15865d28a6bcf7bc2dd753e3.bindPopup(popup_8f28bc5f51988da3b130d0236a3fdc24)
+        ;
+
+        
+    
+    
+            marker_e342a29d15865d28a6bcf7bc2dd753e3.bindTooltip(
+                `<div>
+                     Beans - R0061
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_00c9658ec196a0c298fb0cf60ae70efb = L.marker(
+                [-0.821627, 37.729738],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_433f9937dcb58b1434712f391fc388e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fb8265997c326ca5f6c682f734ff6e2d = $(`<div id="html_fb8265997c326ca5f6c682f734ff6e2d" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0062<br>     <b>Crop:</b> nan<br>     <b>Farm size:</b> 1.07 ha<br>     <b>Yield:</b> 207.1 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_433f9937dcb58b1434712f391fc388e6.setContent(html_fb8265997c326ca5f6c682f734ff6e2d);
+            
+        
+
+        marker_00c9658ec196a0c298fb0cf60ae70efb.bindPopup(popup_433f9937dcb58b1434712f391fc388e6)
+        ;
+
+        
+    
+    
+            marker_00c9658ec196a0c298fb0cf60ae70efb.bindTooltip(
+                `<div>
+                     nan - R0062
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_79d34d6a7761ce3ab899f711d25781ee = L.marker(
+                [0.571844, 37.629903],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_06e1edff0f75ea22634204573cf973e1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6b648e7f2eed2410fc9238b1f74fca04 = $(`<div id="html_6b648e7f2eed2410fc9238b1f74fca04" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0063<br>     <b>Crop:</b> Tea<br>     <b>Farm size:</b> 0.36 ha<br>     <b>Yield:</b> 1871.5 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_06e1edff0f75ea22634204573cf973e1.setContent(html_6b648e7f2eed2410fc9238b1f74fca04);
+            
+        
+
+        marker_79d34d6a7761ce3ab899f711d25781ee.bindPopup(popup_06e1edff0f75ea22634204573cf973e1)
+        ;
+
+        
+    
+    
+            marker_79d34d6a7761ce3ab899f711d25781ee.bindTooltip(
+                `<div>
+                     Tea - R0063
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d6f60f9c88ef4fcf07661223f788b40f = L.marker(
+                [-0.608117, 36.560673],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_4e7d93d428b5dbea674c80c51d83937a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1b71bde6bc5be7178683a2dc01448749 = $(`<div id="html_1b71bde6bc5be7178683a2dc01448749" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0064<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.3 ha<br>     <b>Yield:</b> 507.3 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_4e7d93d428b5dbea674c80c51d83937a.setContent(html_1b71bde6bc5be7178683a2dc01448749);
+            
+        
+
+        marker_d6f60f9c88ef4fcf07661223f788b40f.bindPopup(popup_4e7d93d428b5dbea674c80c51d83937a)
+        ;
+
+        
+    
+    
+            marker_d6f60f9c88ef4fcf07661223f788b40f.bindTooltip(
+                `<div>
+                     Maize - R0064
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_78cdc1925b5413a343b85fdb7813d3e9 = L.marker(
+                [-0.797664, 37.780448],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_92f804ff3dd97096be63bc942f71805a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6c7c3fe8d6abb01f516f65026ee2b86e = $(`<div id="html_6c7c3fe8d6abb01f516f65026ee2b86e" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0065<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.19 ha<br>     <b>Yield:</b> 519.2 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_92f804ff3dd97096be63bc942f71805a.setContent(html_6c7c3fe8d6abb01f516f65026ee2b86e);
+            
+        
+
+        marker_78cdc1925b5413a343b85fdb7813d3e9.bindPopup(popup_92f804ff3dd97096be63bc942f71805a)
+        ;
+
+        
+    
+    
+            marker_78cdc1925b5413a343b85fdb7813d3e9.bindTooltip(
+                `<div>
+                     Maize - R0065
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2738a4be24f7c528df00896a7de6e8c7 = L.marker(
+                [-0.14326, 36.593123],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_d2f715cd2dec57100ad33ffd5c6577c4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_86be414f04c1ac07e370dd3e7fc0a6e5 = $(`<div id="html_86be414f04c1ac07e370dd3e7fc0a6e5" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0066<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 3.16 ha<br>     <b>Yield:</b> 1308.0 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_d2f715cd2dec57100ad33ffd5c6577c4.setContent(html_86be414f04c1ac07e370dd3e7fc0a6e5);
+            
+        
+
+        marker_2738a4be24f7c528df00896a7de6e8c7.bindPopup(popup_d2f715cd2dec57100ad33ffd5c6577c4)
+        ;
+
+        
+    
+    
+            marker_2738a4be24f7c528df00896a7de6e8c7.bindTooltip(
+                `<div>
+                     Maize - R0066
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f20b1901a9170ab68e8b6bf0b3e13e2e = L.marker(
+                [-1.147689, 36.813499],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_5dcf4ae288f24a7fcd1aa8a52ce0420c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ae894aba96096e14b9c8d04b28116599 = $(`<div id="html_ae894aba96096e14b9c8d04b28116599" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0067<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.23 ha<br>     <b>Yield:</b> 1303.0 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_5dcf4ae288f24a7fcd1aa8a52ce0420c.setContent(html_ae894aba96096e14b9c8d04b28116599);
+            
+        
+
+        marker_f20b1901a9170ab68e8b6bf0b3e13e2e.bindPopup(popup_5dcf4ae288f24a7fcd1aa8a52ce0420c)
+        ;
+
+        
+    
+    
+            marker_f20b1901a9170ab68e8b6bf0b3e13e2e.bindTooltip(
+                `<div>
+                     Maize - R0067
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_26830b5656a1d5232c3f33b6c0c1176a = L.marker(
+                [0.505492, 37.866229],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_8fd7719bc5fef5d3dff7fcb5932b1b84 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_97a609f94e8ca9fd9b723b7e64de24d6 = $(`<div id="html_97a609f94e8ca9fd9b723b7e64de24d6" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0068<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.63 ha<br>     <b>Yield:</b> 354.0 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_8fd7719bc5fef5d3dff7fcb5932b1b84.setContent(html_97a609f94e8ca9fd9b723b7e64de24d6);
+            
+        
+
+        marker_26830b5656a1d5232c3f33b6c0c1176a.bindPopup(popup_8fd7719bc5fef5d3dff7fcb5932b1b84)
+        ;
+
+        
+    
+    
+            marker_26830b5656a1d5232c3f33b6c0c1176a.bindTooltip(
+                `<div>
+                     Maize - R0068
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_543b59034c08a4d4d99742d4ac3d5470 = L.marker(
+                [-1.313623, 37.624082],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_6cf60b31006e55ea3c980f534e51cdd4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3271b85f477a55b84efa0dfb876d978b = $(`<div id="html_3271b85f477a55b84efa0dfb876d978b" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0069<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.54 ha<br>     <b>Yield:</b> 1370.1 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_6cf60b31006e55ea3c980f534e51cdd4.setContent(html_3271b85f477a55b84efa0dfb876d978b);
+            
+        
+
+        marker_543b59034c08a4d4d99742d4ac3d5470.bindPopup(popup_6cf60b31006e55ea3c980f534e51cdd4)
+        ;
+
+        
+    
+    
+            marker_543b59034c08a4d4d99742d4ac3d5470.bindTooltip(
+                `<div>
+                     Maize - R0069
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b29ea7e2b4432923d64825b54b10416d = L.marker(
+                [0.967217, 38.123059],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_3d12dbfd627ccd71be5062a73595c9ae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_69c7746e58648120cc6a6a86e99e0901 = $(`<div id="html_69c7746e58648120cc6a6a86e99e0901" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0070<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.74 ha<br>     <b>Yield:</b> 401.7 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_3d12dbfd627ccd71be5062a73595c9ae.setContent(html_69c7746e58648120cc6a6a86e99e0901);
+            
+        
+
+        marker_b29ea7e2b4432923d64825b54b10416d.bindPopup(popup_3d12dbfd627ccd71be5062a73595c9ae)
+        ;
+
+        
+    
+    
+            marker_b29ea7e2b4432923d64825b54b10416d.bindTooltip(
+                `<div>
+                     Maize - R0070
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5292d64ab0b910f6ed0393ab4ffa6e66 = L.marker(
+                [0.430612, 37.644032],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_b09dfbedb9bd1f46c81946f677bb36f2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5b471642ac7af3241121a17be1600e1a = $(`<div id="html_5b471642ac7af3241121a17be1600e1a" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0071<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.82 ha<br>     <b>Yield:</b> 3420.8 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_b09dfbedb9bd1f46c81946f677bb36f2.setContent(html_5b471642ac7af3241121a17be1600e1a);
+            
+        
+
+        marker_5292d64ab0b910f6ed0393ab4ffa6e66.bindPopup(popup_b09dfbedb9bd1f46c81946f677bb36f2)
+        ;
+
+        
+    
+    
+            marker_5292d64ab0b910f6ed0393ab4ffa6e66.bindTooltip(
+                `<div>
+                     Maize - R0071
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6a6b9bba6c2fd7e19c6ae22d87afa30b = L.marker(
+                [-1.003211, 37.420772],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_e0edc0816e145d08462748af43c59399 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_52cfeb8d3383e3b8ada9b11d2a0edee7 = $(`<div id="html_52cfeb8d3383e3b8ada9b11d2a0edee7" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0072<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.26 ha<br>     <b>Yield:</b> 315.6 kg<br>     <b>Irrigation:</b> Sometimes     </div>`)[0];
+                popup_e0edc0816e145d08462748af43c59399.setContent(html_52cfeb8d3383e3b8ada9b11d2a0edee7);
+            
+        
+
+        marker_6a6b9bba6c2fd7e19c6ae22d87afa30b.bindPopup(popup_e0edc0816e145d08462748af43c59399)
+        ;
+
+        
+    
+    
+            marker_6a6b9bba6c2fd7e19c6ae22d87afa30b.bindTooltip(
+                `<div>
+                     Maize - R0072
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ef9ec7e3847f36436079c0b29f6786f6 = L.marker(
+                [-1.486195, 36.234187],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_26675a618dd2af3776cf2710ea8843fb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ce90231f58391aab80ff6aa2084edd96 = $(`<div id="html_ce90231f58391aab80ff6aa2084edd96" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0073<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 2.57 ha<br>     <b>Yield:</b> 825.1 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_26675a618dd2af3776cf2710ea8843fb.setContent(html_ce90231f58391aab80ff6aa2084edd96);
+            
+        
+
+        marker_ef9ec7e3847f36436079c0b29f6786f6.bindPopup(popup_26675a618dd2af3776cf2710ea8843fb)
+        ;
+
+        
+    
+    
+            marker_ef9ec7e3847f36436079c0b29f6786f6.bindTooltip(
+                `<div>
+                     Maize - R0073
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_52cc7220b3e6e9d6004e834de0bd72e1 = L.marker(
+                [0.538654, 36.91929],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_082ae5f19201031fa0d0dd950a6216aa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1d64b58da0ebb1c5ac094cbaa610efc8 = $(`<div id="html_1d64b58da0ebb1c5ac094cbaa610efc8" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0074<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 0.5 ha<br>     <b>Yield:</b> 329.0 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_082ae5f19201031fa0d0dd950a6216aa.setContent(html_1d64b58da0ebb1c5ac094cbaa610efc8);
+            
+        
+
+        marker_52cc7220b3e6e9d6004e834de0bd72e1.bindPopup(popup_082ae5f19201031fa0d0dd950a6216aa)
+        ;
+
+        
+    
+    
+            marker_52cc7220b3e6e9d6004e834de0bd72e1.bindTooltip(
+                `<div>
+                     Coffee - R0074
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3e2f53c845843d2eacde5743d688a83a = L.marker(
+                [0.267143, 36.663006],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_7354ea6758be25352dab31ed25f77ec0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4d2a6f2f393276302885f85ef5c21e73 = $(`<div id="html_4d2a6f2f393276302885f85ef5c21e73" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0075<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 3.27 ha<br>     <b>Yield:</b> 4916.9 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_7354ea6758be25352dab31ed25f77ec0.setContent(html_4d2a6f2f393276302885f85ef5c21e73);
+            
+        
+
+        marker_3e2f53c845843d2eacde5743d688a83a.bindPopup(popup_7354ea6758be25352dab31ed25f77ec0)
+        ;
+
+        
+    
+    
+            marker_3e2f53c845843d2eacde5743d688a83a.bindTooltip(
+                `<div>
+                     Beans - R0075
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_959173e29614a80cf6e6b1b99576c054 = L.marker(
+                [0.322518, 36.609974],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_664fa1692c382c9c58adeb95fc988b5b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9d1d4c33a95aef1acd476e9eb06ead47 = $(`<div id="html_9d1d4c33a95aef1acd476e9eb06ead47" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0076<br>     <b>Crop:</b> nan<br>     <b>Farm size:</b> 0.77 ha<br>     <b>Yield:</b> 218.3 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_664fa1692c382c9c58adeb95fc988b5b.setContent(html_9d1d4c33a95aef1acd476e9eb06ead47);
+            
+        
+
+        marker_959173e29614a80cf6e6b1b99576c054.bindPopup(popup_664fa1692c382c9c58adeb95fc988b5b)
+        ;
+
+        
+    
+    
+            marker_959173e29614a80cf6e6b1b99576c054.bindTooltip(
+                `<div>
+                     nan - R0076
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f55f8d5627570d8eded94469a920abc8 = L.marker(
+                [0.428176, 38.432526],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_3d6bfc19c74517b6f9495332047bad02 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_247e445d15f533b8134744ae82a158c3 = $(`<div id="html_247e445d15f533b8134744ae82a158c3" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0077<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.39 ha<br>     <b>Yield:</b> 1066.3 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_3d6bfc19c74517b6f9495332047bad02.setContent(html_247e445d15f533b8134744ae82a158c3);
+            
+        
+
+        marker_f55f8d5627570d8eded94469a920abc8.bindPopup(popup_3d6bfc19c74517b6f9495332047bad02)
+        ;
+
+        
+    
+    
+            marker_f55f8d5627570d8eded94469a920abc8.bindTooltip(
+                `<div>
+                     Maize - R0077
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_494d3dee42d8a9783e31c9595e551719 = L.marker(
+                [-1.314888, 36.982744],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_8b40b390b8ec0d32116175a9761a501e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_81a8d99fa0f439f34c84ba41da2a5914 = $(`<div id="html_81a8d99fa0f439f34c84ba41da2a5914" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0078<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 1.09 ha<br>     <b>Yield:</b> 343.3 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_8b40b390b8ec0d32116175a9761a501e.setContent(html_81a8d99fa0f439f34c84ba41da2a5914);
+            
+        
+
+        marker_494d3dee42d8a9783e31c9595e551719.bindPopup(popup_8b40b390b8ec0d32116175a9761a501e)
+        ;
+
+        
+    
+    
+            marker_494d3dee42d8a9783e31c9595e551719.bindTooltip(
+                `<div>
+                     Beans - R0078
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_518c561f36677f5901a5b7d46a5b4cd4 = L.marker(
+                [-0.603836, 38.230116],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_37e0f1a1df7953ba1622613573e41d9c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2a220e28cf12abdbfcab7348403ff33c = $(`<div id="html_2a220e28cf12abdbfcab7348403ff33c" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0079<br>     <b>Crop:</b> Other<br>     <b>Farm size:</b> 0.25 ha<br>     <b>Yield:</b> 483.6 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_37e0f1a1df7953ba1622613573e41d9c.setContent(html_2a220e28cf12abdbfcab7348403ff33c);
+            
+        
+
+        marker_518c561f36677f5901a5b7d46a5b4cd4.bindPopup(popup_37e0f1a1df7953ba1622613573e41d9c)
+        ;
+
+        
+    
+    
+            marker_518c561f36677f5901a5b7d46a5b4cd4.bindTooltip(
+                `<div>
+                     Other - R0079
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_98d9bf041ce0e1ca3fc037e9e2a81b71 = L.marker(
+                [-1.210327, 37.577847],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_77e7b0d2a6247c19c1463bfcd7fbfa03 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1738e421452a8583e77855587bf94741 = $(`<div id="html_1738e421452a8583e77855587bf94741" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0080<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.65 ha<br>     <b>Yield:</b> 1000.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_77e7b0d2a6247c19c1463bfcd7fbfa03.setContent(html_1738e421452a8583e77855587bf94741);
+            
+        
+
+        marker_98d9bf041ce0e1ca3fc037e9e2a81b71.bindPopup(popup_77e7b0d2a6247c19c1463bfcd7fbfa03)
+        ;
+
+        
+    
+    
+            marker_98d9bf041ce0e1ca3fc037e9e2a81b71.bindTooltip(
+                `<div>
+                     Maize - R0080
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b2a8746a0bffb5b7157a6040486dda15 = L.marker(
+                [0.657759, 37.987028],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_fe6eec2da87378735ab3beef1136ae72 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2ab2cef00abcad1515062cc3aa4839c9 = $(`<div id="html_2ab2cef00abcad1515062cc3aa4839c9" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0081<br>     <b>Crop:</b> Vegetables<br>     <b>Farm size:</b> 1.1 ha<br>     <b>Yield:</b> 2002.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_fe6eec2da87378735ab3beef1136ae72.setContent(html_2ab2cef00abcad1515062cc3aa4839c9);
+            
+        
+
+        marker_b2a8746a0bffb5b7157a6040486dda15.bindPopup(popup_fe6eec2da87378735ab3beef1136ae72)
+        ;
+
+        
+    
+    
+            marker_b2a8746a0bffb5b7157a6040486dda15.bindTooltip(
+                `<div>
+                     Vegetables - R0081
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0e2dee9468baa129a91481218380b599 = L.marker(
+                [0.058245, 37.256593],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_f88f63386b10941adfd6c9b9b1c554ef = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_adbfbba80caf09d20c7068d77799217f = $(`<div id="html_adbfbba80caf09d20c7068d77799217f" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0082<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 3.62 ha<br>     <b>Yield:</b> 2867.1 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_f88f63386b10941adfd6c9b9b1c554ef.setContent(html_adbfbba80caf09d20c7068d77799217f);
+            
+        
+
+        marker_0e2dee9468baa129a91481218380b599.bindPopup(popup_f88f63386b10941adfd6c9b9b1c554ef)
+        ;
+
+        
+    
+    
+            marker_0e2dee9468baa129a91481218380b599.bindTooltip(
+                `<div>
+                     Maize - R0082
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d28eb81d718f102ff2f24fcba01d7231 = L.marker(
+                [-0.672755, 37.44226],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_6a636e18f25c399fcf511e6377c28224 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_74e8b45ddca0a2b85d3bc35a977dc12f = $(`<div id="html_74e8b45ddca0a2b85d3bc35a977dc12f" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0083<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 2.27 ha<br>     <b>Yield:</b> 166.8 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_6a636e18f25c399fcf511e6377c28224.setContent(html_74e8b45ddca0a2b85d3bc35a977dc12f);
+            
+        
+
+        marker_d28eb81d718f102ff2f24fcba01d7231.bindPopup(popup_6a636e18f25c399fcf511e6377c28224)
+        ;
+
+        
+    
+    
+            marker_d28eb81d718f102ff2f24fcba01d7231.bindTooltip(
+                `<div>
+                     Maize - R0083
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_168f41cccab4d198bcf601ecca536c8a = L.marker(
+                [-1.341104, 37.231294],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_8b6d1e7098ad7c241c51e87a0bba1085 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ac35a424d738046337e18c946f32efe2 = $(`<div id="html_ac35a424d738046337e18c946f32efe2" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0084<br>     <b>Crop:</b> Tea<br>     <b>Farm size:</b> 0.44 ha<br>     <b>Yield:</b> 846.4 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_8b6d1e7098ad7c241c51e87a0bba1085.setContent(html_ac35a424d738046337e18c946f32efe2);
+            
+        
+
+        marker_168f41cccab4d198bcf601ecca536c8a.bindPopup(popup_8b6d1e7098ad7c241c51e87a0bba1085)
+        ;
+
+        
+    
+    
+            marker_168f41cccab4d198bcf601ecca536c8a.bindTooltip(
+                `<div>
+                     Tea - R0084
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_14a8d049225572933ce478cc0b27c228 = L.marker(
+                [-0.722544, 36.488107],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_dab7e31b12492408fcb5684956b122b1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_02777b13d81ba5244317b4dab32f2c79 = $(`<div id="html_02777b13d81ba5244317b4dab32f2c79" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0085<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 0.69 ha<br>     <b>Yield:</b> 2473.9 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_dab7e31b12492408fcb5684956b122b1.setContent(html_02777b13d81ba5244317b4dab32f2c79);
+            
+        
+
+        marker_14a8d049225572933ce478cc0b27c228.bindPopup(popup_dab7e31b12492408fcb5684956b122b1)
+        ;
+
+        
+    
+    
+            marker_14a8d049225572933ce478cc0b27c228.bindTooltip(
+                `<div>
+                     Beans - R0085
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_89d6edf0bf16652d474d5a3175850a0a = L.marker(
+                [-0.687042, 37.80613],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_2f45305831ff4ca9bbfce96acf769adb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b38008d94e36f1a9d059d4e40a5d7d2a = $(`<div id="html_b38008d94e36f1a9d059d4e40a5d7d2a" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0086<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 2.05 ha<br>     <b>Yield:</b> 145.9 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_2f45305831ff4ca9bbfce96acf769adb.setContent(html_b38008d94e36f1a9d059d4e40a5d7d2a);
+            
+        
+
+        marker_89d6edf0bf16652d474d5a3175850a0a.bindPopup(popup_2f45305831ff4ca9bbfce96acf769adb)
+        ;
+
+        
+    
+    
+            marker_89d6edf0bf16652d474d5a3175850a0a.bindTooltip(
+                `<div>
+                     Coffee - R0086
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dcdbc3dfbe918c96279d6c64c8d13980 = L.marker(
+                [0.324015, 36.701931],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_1d8421e9f136b95e5dcdadfffc32ab33 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_df63898d6c71a567aa8ce75b891e8af1 = $(`<div id="html_df63898d6c71a567aa8ce75b891e8af1" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0087<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 2.66 ha<br>     <b>Yield:</b> 882.7 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_1d8421e9f136b95e5dcdadfffc32ab33.setContent(html_df63898d6c71a567aa8ce75b891e8af1);
+            
+        
+
+        marker_dcdbc3dfbe918c96279d6c64c8d13980.bindPopup(popup_1d8421e9f136b95e5dcdadfffc32ab33)
+        ;
+
+        
+    
+    
+            marker_dcdbc3dfbe918c96279d6c64c8d13980.bindTooltip(
+                `<div>
+                     Coffee - R0087
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f2b691d444e4fc25d4e86a010cc598d3 = L.marker(
+                [0.093894, 36.06079],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_7355bf9d2959a376153038521a9ebdad = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9d05768bfd0ce542b380d1998de1cdf8 = $(`<div id="html_9d05768bfd0ce542b380d1998de1cdf8" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0088<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 3.59 ha<br>     <b>Yield:</b> 663.9 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_7355bf9d2959a376153038521a9ebdad.setContent(html_9d05768bfd0ce542b380d1998de1cdf8);
+            
+        
+
+        marker_f2b691d444e4fc25d4e86a010cc598d3.bindPopup(popup_7355bf9d2959a376153038521a9ebdad)
+        ;
+
+        
+    
+    
+            marker_f2b691d444e4fc25d4e86a010cc598d3.bindTooltip(
+                `<div>
+                     Maize - R0088
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_215d3f9cdf5e45c0cbd1cfe28ce3425f = L.marker(
+                [0.718032, 37.613681],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_26eb3258c0401e57de9469586e21c329 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d5ad236a353ccdc5f33b0b76f0edae64 = $(`<div id="html_d5ad236a353ccdc5f33b0b76f0edae64" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0089<br>     <b>Crop:</b> Potatoes<br>     <b>Farm size:</b> 3.57 ha<br>     <b>Yield:</b> 965.9 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_26eb3258c0401e57de9469586e21c329.setContent(html_d5ad236a353ccdc5f33b0b76f0edae64);
+            
+        
+
+        marker_215d3f9cdf5e45c0cbd1cfe28ce3425f.bindPopup(popup_26eb3258c0401e57de9469586e21c329)
+        ;
+
+        
+    
+    
+            marker_215d3f9cdf5e45c0cbd1cfe28ce3425f.bindTooltip(
+                `<div>
+                     Potatoes - R0089
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8cd2a73062c91626f3982104ed0e17de = L.marker(
+                [-0.319463, 36.442777],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_e319329fe936fdfda85fbd4e038fe3ab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0c4fc2bb9fc7280cf4a19d7654f96cd6 = $(`<div id="html_0c4fc2bb9fc7280cf4a19d7654f96cd6" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0090<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.26 ha<br>     <b>Yield:</b> 331.9 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_e319329fe936fdfda85fbd4e038fe3ab.setContent(html_0c4fc2bb9fc7280cf4a19d7654f96cd6);
+            
+        
+
+        marker_8cd2a73062c91626f3982104ed0e17de.bindPopup(popup_e319329fe936fdfda85fbd4e038fe3ab)
+        ;
+
+        
+    
+    
+            marker_8cd2a73062c91626f3982104ed0e17de.bindTooltip(
+                `<div>
+                     Maize - R0090
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_81961713b540cf5e4a7ca582d6726ae2 = L.marker(
+                [-1.201014, 38.351146],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_19f6d24a244494580dc4aa031952abcc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bbb47205c97c44b6d79bfb1c9dba6f26 = $(`<div id="html_bbb47205c97c44b6d79bfb1c9dba6f26" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0091<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 1.8 ha<br>     <b>Yield:</b> 182.7 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_19f6d24a244494580dc4aa031952abcc.setContent(html_bbb47205c97c44b6d79bfb1c9dba6f26);
+            
+        
+
+        marker_81961713b540cf5e4a7ca582d6726ae2.bindPopup(popup_19f6d24a244494580dc4aa031952abcc)
+        ;
+
+        
+    
+    
+            marker_81961713b540cf5e4a7ca582d6726ae2.bindTooltip(
+                `<div>
+                     Beans - R0091
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f22c9a7692eef681bef412d767f9b8d2 = L.marker(
+                [0.283112, 38.384821],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_43d028f851da0897d01ead116cee81fb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ddf8bcf415001d752678b56ecbd4b3b5 = $(`<div id="html_ddf8bcf415001d752678b56ecbd4b3b5" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0092<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 3.82 ha<br>     <b>Yield:</b> 118.9 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_43d028f851da0897d01ead116cee81fb.setContent(html_ddf8bcf415001d752678b56ecbd4b3b5);
+            
+        
+
+        marker_f22c9a7692eef681bef412d767f9b8d2.bindPopup(popup_43d028f851da0897d01ead116cee81fb)
+        ;
+
+        
+    
+    
+            marker_f22c9a7692eef681bef412d767f9b8d2.bindTooltip(
+                `<div>
+                     Beans - R0092
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e4616d4f1bc6d31752fe444b63ea5f7 = L.marker(
+                [0.401963, 38.287161],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_85d3dcee3d436bf865bc6b8d1d0d6c07 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e2b9b1fbab5e0da3c6a2bfc2a8541e0a = $(`<div id="html_e2b9b1fbab5e0da3c6a2bfc2a8541e0a" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0093<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 1.06 ha<br>     <b>Yield:</b> 1601.6 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_85d3dcee3d436bf865bc6b8d1d0d6c07.setContent(html_e2b9b1fbab5e0da3c6a2bfc2a8541e0a);
+            
+        
+
+        marker_8e4616d4f1bc6d31752fe444b63ea5f7.bindPopup(popup_85d3dcee3d436bf865bc6b8d1d0d6c07)
+        ;
+
+        
+    
+    
+            marker_8e4616d4f1bc6d31752fe444b63ea5f7.bindTooltip(
+                `<div>
+                     Coffee - R0093
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c28acdeac1b8ea66c1604ae5c67846d3 = L.marker(
+                [-0.096807, 36.925397],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_dfb3ec1d174d099f5154b0de97b955e4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_78dc81eac618b2c6a363bb103192b466 = $(`<div id="html_78dc81eac618b2c6a363bb103192b466" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0094<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.83 ha<br>     <b>Yield:</b> 1796.6 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_dfb3ec1d174d099f5154b0de97b955e4.setContent(html_78dc81eac618b2c6a363bb103192b466);
+            
+        
+
+        marker_c28acdeac1b8ea66c1604ae5c67846d3.bindPopup(popup_dfb3ec1d174d099f5154b0de97b955e4)
+        ;
+
+        
+    
+    
+            marker_c28acdeac1b8ea66c1604ae5c67846d3.bindTooltip(
+                `<div>
+                     Maize - R0094
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8a85d21a4d2b5cccd63f09f70aa85d6f = L.marker(
+                [0.427418, 36.038642],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_90fa8ca6926326dae46b6bdbdcfdf331 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4d8c1b820b308c69b70de7a137b8b79c = $(`<div id="html_4d8c1b820b308c69b70de7a137b8b79c" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0095<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.04 ha<br>     <b>Yield:</b> 873.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_90fa8ca6926326dae46b6bdbdcfdf331.setContent(html_4d8c1b820b308c69b70de7a137b8b79c);
+            
+        
+
+        marker_8a85d21a4d2b5cccd63f09f70aa85d6f.bindPopup(popup_90fa8ca6926326dae46b6bdbdcfdf331)
+        ;
+
+        
+    
+    
+            marker_8a85d21a4d2b5cccd63f09f70aa85d6f.bindTooltip(
+                `<div>
+                     Maize - R0095
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ea7724374a3301d6e3861e814c92a4dd = L.marker(
+                [-0.265511, 38.320796],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_ab3249c44e769929b2ca45a341ebf475 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6603abf256adf052ead70d345e4f310f = $(`<div id="html_6603abf256adf052ead70d345e4f310f" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0096<br>     <b>Crop:</b> Tea<br>     <b>Farm size:</b> 0.87 ha<br>     <b>Yield:</b> 411.3 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_ab3249c44e769929b2ca45a341ebf475.setContent(html_6603abf256adf052ead70d345e4f310f);
+            
+        
+
+        marker_ea7724374a3301d6e3861e814c92a4dd.bindPopup(popup_ab3249c44e769929b2ca45a341ebf475)
+        ;
+
+        
+    
+    
+            marker_ea7724374a3301d6e3861e814c92a4dd.bindTooltip(
+                `<div>
+                     Tea - R0096
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b6242c16cbb7faad0dcc2ecc00b6ec5c = L.marker(
+                [-0.193168, 37.07046],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_1f631628858146541d4ee49dac9adfb5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_387816ed47f94a866d6514f3da6a5635 = $(`<div id="html_387816ed47f94a866d6514f3da6a5635" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0097<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.4 ha<br>     <b>Yield:</b> 154.4 kg<br>     <b>Irrigation:</b> Sometimes     </div>`)[0];
+                popup_1f631628858146541d4ee49dac9adfb5.setContent(html_387816ed47f94a866d6514f3da6a5635);
+            
+        
+
+        marker_b6242c16cbb7faad0dcc2ecc00b6ec5c.bindPopup(popup_1f631628858146541d4ee49dac9adfb5)
+        ;
+
+        
+    
+    
+            marker_b6242c16cbb7faad0dcc2ecc00b6ec5c.bindTooltip(
+                `<div>
+                     Maize - R0097
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eae84061e5a40b20d0737bfeafbe4801 = L.marker(
+                [-0.431147, 38.416637],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_9f247f79dc2ea540535ffb6445b25993 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5e17a3dfd77b03a678f9d8244ff9fc2a = $(`<div id="html_5e17a3dfd77b03a678f9d8244ff9fc2a" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0098<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 0.78 ha<br>     <b>Yield:</b> 1104.3 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_9f247f79dc2ea540535ffb6445b25993.setContent(html_5e17a3dfd77b03a678f9d8244ff9fc2a);
+            
+        
+
+        marker_eae84061e5a40b20d0737bfeafbe4801.bindPopup(popup_9f247f79dc2ea540535ffb6445b25993)
+        ;
+
+        
+    
+    
+            marker_eae84061e5a40b20d0737bfeafbe4801.bindTooltip(
+                `<div>
+                     Coffee - R0098
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9cabe262d56fff5fa5a683fba56cd226 = L.marker(
+                [-1.436452, 38.40905],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_82e298a6ee90ab5efbb86b128df7e902 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_89e37311b4f2a875f41b2c7fb9212564 = $(`<div id="html_89e37311b4f2a875f41b2c7fb9212564" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0099<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.22 ha<br>     <b>Yield:</b> 247.0 kg<br>     <b>Irrigation:</b> nan     </div>`)[0];
+                popup_82e298a6ee90ab5efbb86b128df7e902.setContent(html_89e37311b4f2a875f41b2c7fb9212564);
+            
+        
+
+        marker_9cabe262d56fff5fa5a683fba56cd226.bindPopup(popup_82e298a6ee90ab5efbb86b128df7e902)
+        ;
+
+        
+    
+    
+            marker_9cabe262d56fff5fa5a683fba56cd226.bindTooltip(
+                `<div>
+                     Maize - R0099
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c08e9f326695839c086139cf26badb32 = L.marker(
+                [-1.230271, 38.132524],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_7be3dd468a084e2afa3c8b92fa1e2ebf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3e6dd668d603dc2ba82ca843c34cd3d9 = $(`<div id="html_3e6dd668d603dc2ba82ca843c34cd3d9" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0100<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 0.59 ha<br>     <b>Yield:</b> 350.7 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_7be3dd468a084e2afa3c8b92fa1e2ebf.setContent(html_3e6dd668d603dc2ba82ca843c34cd3d9);
+            
+        
+
+        marker_c08e9f326695839c086139cf26badb32.bindPopup(popup_7be3dd468a084e2afa3c8b92fa1e2ebf)
+        ;
+
+        
+    
+    
+            marker_c08e9f326695839c086139cf26badb32.bindTooltip(
+                `<div>
+                     Coffee - R0100
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_07a915b39207b8f71c33f96b7bba4262 = L.marker(
+                [-1.421427, 36.736122],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_d306069c1f4c8975434bd5a0087cb9f0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_73992b3b8ecde8ce5e942c8a0892a068 = $(`<div id="html_73992b3b8ecde8ce5e942c8a0892a068" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0101<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 1.16 ha<br>     <b>Yield:</b> 392.3 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_d306069c1f4c8975434bd5a0087cb9f0.setContent(html_73992b3b8ecde8ce5e942c8a0892a068);
+            
+        
+
+        marker_07a915b39207b8f71c33f96b7bba4262.bindPopup(popup_d306069c1f4c8975434bd5a0087cb9f0)
+        ;
+
+        
+    
+    
+            marker_07a915b39207b8f71c33f96b7bba4262.bindTooltip(
+                `<div>
+                     Coffee - R0101
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_18cf873876ddc2d41c0ec46ea0dc15e3 = L.marker(
+                [0.091026, 36.962744],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_d1811c2168bcbe675b74546fff1fd078 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4dbca12cc8ff367df17c0572440dd216 = $(`<div id="html_4dbca12cc8ff367df17c0572440dd216" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0102<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.93 ha<br>     <b>Yield:</b> 556.8 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_d1811c2168bcbe675b74546fff1fd078.setContent(html_4dbca12cc8ff367df17c0572440dd216);
+            
+        
+
+        marker_18cf873876ddc2d41c0ec46ea0dc15e3.bindPopup(popup_d1811c2168bcbe675b74546fff1fd078)
+        ;
+
+        
+    
+    
+            marker_18cf873876ddc2d41c0ec46ea0dc15e3.bindTooltip(
+                `<div>
+                     Maize - R0102
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4c280b57e72c6a65d69f6bf6d0f407e5 = L.marker(
+                [-0.71411, 38.127842],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_503dcfce803444ef00a5170e8b082448 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_29e0b0efb03fe34334d9dd4190a8d5bd = $(`<div id="html_29e0b0efb03fe34334d9dd4190a8d5bd" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0103<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 0.84 ha<br>     <b>Yield:</b> 335.9 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_503dcfce803444ef00a5170e8b082448.setContent(html_29e0b0efb03fe34334d9dd4190a8d5bd);
+            
+        
+
+        marker_4c280b57e72c6a65d69f6bf6d0f407e5.bindPopup(popup_503dcfce803444ef00a5170e8b082448)
+        ;
+
+        
+    
+    
+            marker_4c280b57e72c6a65d69f6bf6d0f407e5.bindTooltip(
+                `<div>
+                     Beans - R0103
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_020150c4fd1caf9360a844fcb24379d3 = L.marker(
+                [-0.228573, 36.792305],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_c0e148f669461de12fcafad472deb11b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8ae279e875962e93f5a13d0dbd354292 = $(`<div id="html_8ae279e875962e93f5a13d0dbd354292" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0104<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.36 ha<br>     <b>Yield:</b> 685.5 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_c0e148f669461de12fcafad472deb11b.setContent(html_8ae279e875962e93f5a13d0dbd354292);
+            
+        
+
+        marker_020150c4fd1caf9360a844fcb24379d3.bindPopup(popup_c0e148f669461de12fcafad472deb11b)
+        ;
+
+        
+    
+    
+            marker_020150c4fd1caf9360a844fcb24379d3.bindTooltip(
+                `<div>
+                     Maize - R0104
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7d7505814d4c61d396112226ed1c9955 = L.marker(
+                [0.768916, 36.423732],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_7766ba9a08f78e2cb6ea24242c170f1e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_46faafe83526fa55dd6c898b78484e11 = $(`<div id="html_46faafe83526fa55dd6c898b78484e11" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0105<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.51 ha<br>     <b>Yield:</b> 380.1 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_7766ba9a08f78e2cb6ea24242c170f1e.setContent(html_46faafe83526fa55dd6c898b78484e11);
+            
+        
+
+        marker_7d7505814d4c61d396112226ed1c9955.bindPopup(popup_7766ba9a08f78e2cb6ea24242c170f1e)
+        ;
+
+        
+    
+    
+            marker_7d7505814d4c61d396112226ed1c9955.bindTooltip(
+                `<div>
+                     Maize - R0105
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f3daa8b56316e42957730cbac8c20327 = L.marker(
+                [-0.876769, 37.392003],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_21e56318578469f0233ced5bdbb148f6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_efe3bdfa5d20f8d943fa66a37253fd6e = $(`<div id="html_efe3bdfa5d20f8d943fa66a37253fd6e" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0106<br>     <b>Crop:</b> nan<br>     <b>Farm size:</b> 1.94 ha<br>     <b>Yield:</b> 1250.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_21e56318578469f0233ced5bdbb148f6.setContent(html_efe3bdfa5d20f8d943fa66a37253fd6e);
+            
+        
+
+        marker_f3daa8b56316e42957730cbac8c20327.bindPopup(popup_21e56318578469f0233ced5bdbb148f6)
+        ;
+
+        
+    
+    
+            marker_f3daa8b56316e42957730cbac8c20327.bindTooltip(
+                `<div>
+                     nan - R0106
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2c789957ee15b00363516e6e3b375e19 = L.marker(
+                [-0.474043, 38.340387],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_b6a5afac088b939f26db92e9806e5c8c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a706a4c35a7e563b00a5c3fcb530f86a = $(`<div id="html_a706a4c35a7e563b00a5c3fcb530f86a" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0107<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 1.21 ha<br>     <b>Yield:</b> 1682.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_b6a5afac088b939f26db92e9806e5c8c.setContent(html_a706a4c35a7e563b00a5c3fcb530f86a);
+            
+        
+
+        marker_2c789957ee15b00363516e6e3b375e19.bindPopup(popup_b6a5afac088b939f26db92e9806e5c8c)
+        ;
+
+        
+    
+    
+            marker_2c789957ee15b00363516e6e3b375e19.bindTooltip(
+                `<div>
+                     Beans - R0107
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9252acf3d0d0d53690196516f27b3e82 = L.marker(
+                [0.388878, 37.740074],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_96a2958ecafbf260be46b8d05d6b4ac4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1193951714dc5bcb6cefcfd1200450f6 = $(`<div id="html_1193951714dc5bcb6cefcfd1200450f6" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0108<br>     <b>Crop:</b> Vegetables<br>     <b>Farm size:</b> 3.22 ha<br>     <b>Yield:</b> 733.4 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_96a2958ecafbf260be46b8d05d6b4ac4.setContent(html_1193951714dc5bcb6cefcfd1200450f6);
+            
+        
+
+        marker_9252acf3d0d0d53690196516f27b3e82.bindPopup(popup_96a2958ecafbf260be46b8d05d6b4ac4)
+        ;
+
+        
+    
+    
+            marker_9252acf3d0d0d53690196516f27b3e82.bindTooltip(
+                `<div>
+                     Vegetables - R0108
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0647e6020d518dcdf093cd433ae29a09 = L.marker(
+                [-0.928005, 37.425153],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_1a248b246f685ac67c5d967bcd72a482 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_189946bb79caf7d2fca454130a9fe307 = $(`<div id="html_189946bb79caf7d2fca454130a9fe307" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0109<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.25 ha<br>     <b>Yield:</b> 1008.6 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_1a248b246f685ac67c5d967bcd72a482.setContent(html_189946bb79caf7d2fca454130a9fe307);
+            
+        
+
+        marker_0647e6020d518dcdf093cd433ae29a09.bindPopup(popup_1a248b246f685ac67c5d967bcd72a482)
+        ;
+
+        
+    
+    
+            marker_0647e6020d518dcdf093cd433ae29a09.bindTooltip(
+                `<div>
+                     Maize - R0109
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4f0f994b7726e59140fcd2ca91aff222 = L.marker(
+                [-1.30755, 36.242941],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_3b9d3f6118f318b6d79a060b2397e6b1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1988ed543f41a2eb3740135dac3257ca = $(`<div id="html_1988ed543f41a2eb3740135dac3257ca" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0110<br>     <b>Crop:</b> Potatoes<br>     <b>Farm size:</b> 14.16 ha<br>     <b>Yield:</b> 4474.1 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_3b9d3f6118f318b6d79a060b2397e6b1.setContent(html_1988ed543f41a2eb3740135dac3257ca);
+            
+        
+
+        marker_4f0f994b7726e59140fcd2ca91aff222.bindPopup(popup_3b9d3f6118f318b6d79a060b2397e6b1)
+        ;
+
+        
+    
+    
+            marker_4f0f994b7726e59140fcd2ca91aff222.bindTooltip(
+                `<div>
+                     Potatoes - R0110
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dbde7aa2b6acc0a81b1c7d67cff84f96 = L.marker(
+                [-0.775621, 37.537518],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_cbe03718ba9ca9588b2f8d6af1e954cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0048c5257d331302da30f40de0018184 = $(`<div id="html_0048c5257d331302da30f40de0018184" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0111<br>     <b>Crop:</b> Potatoes<br>     <b>Farm size:</b> 0.67 ha<br>     <b>Yield:</b> 231.5 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_cbe03718ba9ca9588b2f8d6af1e954cb.setContent(html_0048c5257d331302da30f40de0018184);
+            
+        
+
+        marker_dbde7aa2b6acc0a81b1c7d67cff84f96.bindPopup(popup_cbe03718ba9ca9588b2f8d6af1e954cb)
+        ;
+
+        
+    
+    
+            marker_dbde7aa2b6acc0a81b1c7d67cff84f96.bindTooltip(
+                `<div>
+                     Potatoes - R0111
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a940f755f383b0744a287818266df7e0 = L.marker(
+                [-1.096947, 38.475135],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_4fddfc5492c5b4ce33495d03bded1790 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5066f9a9eb11986f25e567b699cb543c = $(`<div id="html_5066f9a9eb11986f25e567b699cb543c" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0112<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 1.86 ha<br>     <b>Yield:</b> 219.2 kg<br>     <b>Irrigation:</b> nan     </div>`)[0];
+                popup_4fddfc5492c5b4ce33495d03bded1790.setContent(html_5066f9a9eb11986f25e567b699cb543c);
+            
+        
+
+        marker_a940f755f383b0744a287818266df7e0.bindPopup(popup_4fddfc5492c5b4ce33495d03bded1790)
+        ;
+
+        
+    
+    
+            marker_a940f755f383b0744a287818266df7e0.bindTooltip(
+                `<div>
+                     Coffee - R0112
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2cd614d16f057e25375f986198c0354a = L.marker(
+                [0.824244, 36.35021],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_30290dcee80343c8ba187950cd1903f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ace2ec92a79a0ea0db6bb7c14cfa4134 = $(`<div id="html_ace2ec92a79a0ea0db6bb7c14cfa4134" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0113<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 0.64 ha<br>     <b>Yield:</b> 1243.3 kg<br>     <b>Irrigation:</b> Sometimes     </div>`)[0];
+                popup_30290dcee80343c8ba187950cd1903f1.setContent(html_ace2ec92a79a0ea0db6bb7c14cfa4134);
+            
+        
+
+        marker_2cd614d16f057e25375f986198c0354a.bindPopup(popup_30290dcee80343c8ba187950cd1903f1)
+        ;
+
+        
+    
+    
+            marker_2cd614d16f057e25375f986198c0354a.bindTooltip(
+                `<div>
+                     Beans - R0113
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_00724bf1f69cdb2c98a0c20b8a0ea8ea = L.marker(
+                [0.520301, 37.295824],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_335ae82e3bd726271acbdf2176a07611 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_75f2a162fc1e3c098be27dd6341e375d = $(`<div id="html_75f2a162fc1e3c098be27dd6341e375d" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0114<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 2.26 ha<br>     <b>Yield:</b> 3834.9 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_335ae82e3bd726271acbdf2176a07611.setContent(html_75f2a162fc1e3c098be27dd6341e375d);
+            
+        
+
+        marker_00724bf1f69cdb2c98a0c20b8a0ea8ea.bindPopup(popup_335ae82e3bd726271acbdf2176a07611)
+        ;
+
+        
+    
+    
+            marker_00724bf1f69cdb2c98a0c20b8a0ea8ea.bindTooltip(
+                `<div>
+                     Beans - R0114
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f08bab33fbdc586d9365f23abe90b4cb = L.marker(
+                [0.083509, 38.193433],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_14b9e2448dccf3158372f14577fe4188 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0217aaf8fc9d09cc7748e4e7fb291542 = $(`<div id="html_0217aaf8fc9d09cc7748e4e7fb291542" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0115<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 1.68 ha<br>     <b>Yield:</b> 526.1 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_14b9e2448dccf3158372f14577fe4188.setContent(html_0217aaf8fc9d09cc7748e4e7fb291542);
+            
+        
+
+        marker_f08bab33fbdc586d9365f23abe90b4cb.bindPopup(popup_14b9e2448dccf3158372f14577fe4188)
+        ;
+
+        
+    
+    
+            marker_f08bab33fbdc586d9365f23abe90b4cb.bindTooltip(
+                `<div>
+                     Beans - R0115
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_849c199c2460f0d5831910eb6a4c345f = L.marker(
+                [0.678651, 37.851922],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_3a46e02388a626c67e7be516c921e298 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_90f49d6450312765c52158b1a6a6ae2b = $(`<div id="html_90f49d6450312765c52158b1a6a6ae2b" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0116<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 0.8 ha<br>     <b>Yield:</b> 3146.8 kg<br>     <b>Irrigation:</b> Sometimes     </div>`)[0];
+                popup_3a46e02388a626c67e7be516c921e298.setContent(html_90f49d6450312765c52158b1a6a6ae2b);
+            
+        
+
+        marker_849c199c2460f0d5831910eb6a4c345f.bindPopup(popup_3a46e02388a626c67e7be516c921e298)
+        ;
+
+        
+    
+    
+            marker_849c199c2460f0d5831910eb6a4c345f.bindTooltip(
+                `<div>
+                     Beans - R0116
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2ff49b3f8e98feee61519e1f7922d0b1 = L.marker(
+                [0.50918, 37.742539],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_dacd866db2bb5692632e93fa75430479 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e7e5d68d4a0a4897486f318b87a71f20 = $(`<div id="html_e7e5d68d4a0a4897486f318b87a71f20" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0117<br>     <b>Crop:</b> Vegetables<br>     <b>Farm size:</b> 3.19 ha<br>     <b>Yield:</b> 725.4 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_dacd866db2bb5692632e93fa75430479.setContent(html_e7e5d68d4a0a4897486f318b87a71f20);
+            
+        
+
+        marker_2ff49b3f8e98feee61519e1f7922d0b1.bindPopup(popup_dacd866db2bb5692632e93fa75430479)
+        ;
+
+        
+    
+    
+            marker_2ff49b3f8e98feee61519e1f7922d0b1.bindTooltip(
+                `<div>
+                     Vegetables - R0117
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fc49c4adcc2ce937720537a74a87b469 = L.marker(
+                [-1.033575, 37.75621],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_87b15c4cc77c7d6172d198b2c890f61d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fcc84a3c95c42f2063d5b010b60c83ce = $(`<div id="html_fcc84a3c95c42f2063d5b010b60c83ce" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0118<br>     <b>Crop:</b> Other<br>     <b>Farm size:</b> 1.18 ha<br>     <b>Yield:</b> 360.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_87b15c4cc77c7d6172d198b2c890f61d.setContent(html_fcc84a3c95c42f2063d5b010b60c83ce);
+            
+        
+
+        marker_fc49c4adcc2ce937720537a74a87b469.bindPopup(popup_87b15c4cc77c7d6172d198b2c890f61d)
+        ;
+
+        
+    
+    
+            marker_fc49c4adcc2ce937720537a74a87b469.bindTooltip(
+                `<div>
+                     Other - R0118
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8798bada83136219aac4c739bedc31ab = L.marker(
+                [0.731397, 36.898728],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_9a18389caca9797cdb55fa2e594b5bd5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f0ca3e87840e3c997277c48d08f810a0 = $(`<div id="html_f0ca3e87840e3c997277c48d08f810a0" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0119<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 2.09 ha<br>     <b>Yield:</b> 272.7 kg<br>     <b>Irrigation:</b> Sometimes     </div>`)[0];
+                popup_9a18389caca9797cdb55fa2e594b5bd5.setContent(html_f0ca3e87840e3c997277c48d08f810a0);
+            
+        
+
+        marker_8798bada83136219aac4c739bedc31ab.bindPopup(popup_9a18389caca9797cdb55fa2e594b5bd5)
+        ;
+
+        
+    
+    
+            marker_8798bada83136219aac4c739bedc31ab.bindTooltip(
+                `<div>
+                     Maize - R0119
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d7ec942b56ed33d8164bedc559326555 = L.marker(
+                [-0.151644, 36.73398],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_de702ffc3cdb899074142874ed5cda91 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ceea683a2aee0d2261b1d22f405ad02 = $(`<div id="html_3ceea683a2aee0d2261b1d22f405ad02" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0120<br>     <b>Crop:</b> Potatoes<br>     <b>Farm size:</b> 0.65 ha<br>     <b>Yield:</b> 1172.0 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_de702ffc3cdb899074142874ed5cda91.setContent(html_3ceea683a2aee0d2261b1d22f405ad02);
+            
+        
+
+        marker_d7ec942b56ed33d8164bedc559326555.bindPopup(popup_de702ffc3cdb899074142874ed5cda91)
+        ;
+
+        
+    
+    
+            marker_d7ec942b56ed33d8164bedc559326555.bindTooltip(
+                `<div>
+                     Potatoes - R0120
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_664bc7e2cf6544ca63780b6e060dbeb9 = L.marker(
+                [0.5186, 38.023403],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_c95573d63b140f06bd4abb7d5ef4c4a0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_67cc7a500dc90e530a70b875e33af68e = $(`<div id="html_67cc7a500dc90e530a70b875e33af68e" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0121<br>     <b>Crop:</b> Other<br>     <b>Farm size:</b> 1.32 ha<br>     <b>Yield:</b> 291.9 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_c95573d63b140f06bd4abb7d5ef4c4a0.setContent(html_67cc7a500dc90e530a70b875e33af68e);
+            
+        
+
+        marker_664bc7e2cf6544ca63780b6e060dbeb9.bindPopup(popup_c95573d63b140f06bd4abb7d5ef4c4a0)
+        ;
+
+        
+    
+    
+            marker_664bc7e2cf6544ca63780b6e060dbeb9.bindTooltip(
+                `<div>
+                     Other - R0121
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a9817041a1b06a3a73becd8dd56f1a6b = L.marker(
+                [0.740228, 38.025283],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_d3347ee1269c66bf79c722eae912beba = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_23b4e1eab627064b799320367046d011 = $(`<div id="html_23b4e1eab627064b799320367046d011" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0122<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 6.7 ha<br>     <b>Yield:</b> 715.6 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_d3347ee1269c66bf79c722eae912beba.setContent(html_23b4e1eab627064b799320367046d011);
+            
+        
+
+        marker_a9817041a1b06a3a73becd8dd56f1a6b.bindPopup(popup_d3347ee1269c66bf79c722eae912beba)
+        ;
+
+        
+    
+    
+            marker_a9817041a1b06a3a73becd8dd56f1a6b.bindTooltip(
+                `<div>
+                     Maize - R0122
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_37413570d7bcdb5e1ddbe09602b34e89 = L.marker(
+                [-0.704991, 38.167681],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_ecd54c48f8e40f4d6b42f874296121fe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c2a1fa963701328a5581b2f9286e9225 = $(`<div id="html_c2a1fa963701328a5581b2f9286e9225" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0123<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 2.92 ha<br>     <b>Yield:</b> 2765.9 kg<br>     <b>Irrigation:</b> Sometimes     </div>`)[0];
+                popup_ecd54c48f8e40f4d6b42f874296121fe.setContent(html_c2a1fa963701328a5581b2f9286e9225);
+            
+        
+
+        marker_37413570d7bcdb5e1ddbe09602b34e89.bindPopup(popup_ecd54c48f8e40f4d6b42f874296121fe)
+        ;
+
+        
+    
+    
+            marker_37413570d7bcdb5e1ddbe09602b34e89.bindTooltip(
+                `<div>
+                     Maize - R0123
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b7cbecc8266d55c70d857e815580facf = L.marker(
+                [-1.22487, 38.283101],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_a4738c599c9b44fc1bc073889b627758 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0534d7e49f484814fed57522ae7b0d94 = $(`<div id="html_0534d7e49f484814fed57522ae7b0d94" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0124<br>     <b>Crop:</b> Potatoes<br>     <b>Farm size:</b> 1.73 ha<br>     <b>Yield:</b> 504.7 kg<br>     <b>Irrigation:</b> nan     </div>`)[0];
+                popup_a4738c599c9b44fc1bc073889b627758.setContent(html_0534d7e49f484814fed57522ae7b0d94);
+            
+        
+
+        marker_b7cbecc8266d55c70d857e815580facf.bindPopup(popup_a4738c599c9b44fc1bc073889b627758)
+        ;
+
+        
+    
+    
+            marker_b7cbecc8266d55c70d857e815580facf.bindTooltip(
+                `<div>
+                     Potatoes - R0124
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6a88738f2ecbe18e3004f7e09605b453 = L.marker(
+                [-0.930162, 37.278356],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_ba0e19302a46e24e1749480e8636711d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6a1a42d4302b1eabfd3ba344dfe107d3 = $(`<div id="html_6a1a42d4302b1eabfd3ba344dfe107d3" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0125<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 0.94 ha<br>     <b>Yield:</b> 2170.3 kg<br>     <b>Irrigation:</b> Sometimes     </div>`)[0];
+                popup_ba0e19302a46e24e1749480e8636711d.setContent(html_6a1a42d4302b1eabfd3ba344dfe107d3);
+            
+        
+
+        marker_6a88738f2ecbe18e3004f7e09605b453.bindPopup(popup_ba0e19302a46e24e1749480e8636711d)
+        ;
+
+        
+    
+    
+            marker_6a88738f2ecbe18e3004f7e09605b453.bindTooltip(
+                `<div>
+                     Coffee - R0125
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_51f75ff92eea09dcda8a5025ead7c722 = L.marker(
+                [-0.432231, 37.253791],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_5b08b973b42ab0d57a9f463d423db0fb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2f529662e62af2916e7ef610c4e18a3a = $(`<div id="html_2f529662e62af2916e7ef610c4e18a3a" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0126<br>     <b>Crop:</b> Vegetables<br>     <b>Farm size:</b> 1.42 ha<br>     <b>Yield:</b> 222.9 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_5b08b973b42ab0d57a9f463d423db0fb.setContent(html_2f529662e62af2916e7ef610c4e18a3a);
+            
+        
+
+        marker_51f75ff92eea09dcda8a5025ead7c722.bindPopup(popup_5b08b973b42ab0d57a9f463d423db0fb)
+        ;
+
+        
+    
+    
+            marker_51f75ff92eea09dcda8a5025ead7c722.bindTooltip(
+                `<div>
+                     Vegetables - R0126
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_37b1306fa135ed2fc717baf611801d8e = L.marker(
+                [0.545037, 37.995738],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_1a31f4f1da1b7a8bab7bfe9fbecb7095 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_34929b4f2a8fbde394f4df5ee56361b9 = $(`<div id="html_34929b4f2a8fbde394f4df5ee56361b9" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0127<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.58 ha<br>     <b>Yield:</b> 411.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_1a31f4f1da1b7a8bab7bfe9fbecb7095.setContent(html_34929b4f2a8fbde394f4df5ee56361b9);
+            
+        
+
+        marker_37b1306fa135ed2fc717baf611801d8e.bindPopup(popup_1a31f4f1da1b7a8bab7bfe9fbecb7095)
+        ;
+
+        
+    
+    
+            marker_37b1306fa135ed2fc717baf611801d8e.bindTooltip(
+                `<div>
+                     Maize - R0127
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_29ff690ce9039ad60803e9453c392067 = L.marker(
+                [0.651826, 37.62491],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_95ceefb0e89e068505e3039335faa05f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d26cdfe6549ef1f61dd072652121591d = $(`<div id="html_d26cdfe6549ef1f61dd072652121591d" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0128<br>     <b>Crop:</b> Vegetables<br>     <b>Farm size:</b> 1.93 ha<br>     <b>Yield:</b> 187.5 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_95ceefb0e89e068505e3039335faa05f.setContent(html_d26cdfe6549ef1f61dd072652121591d);
+            
+        
+
+        marker_29ff690ce9039ad60803e9453c392067.bindPopup(popup_95ceefb0e89e068505e3039335faa05f)
+        ;
+
+        
+    
+    
+            marker_29ff690ce9039ad60803e9453c392067.bindTooltip(
+                `<div>
+                     Vegetables - R0128
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dd357d1cec4b51c79a43d020c31344d4 = L.marker(
+                [-1.48262, 37.754917],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_afbc6bc6cbb763124d13bb0193546618 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7331df798306e2cc73f0386f771ed40b = $(`<div id="html_7331df798306e2cc73f0386f771ed40b" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0129<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.57 ha<br>     <b>Yield:</b> 710.3 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_afbc6bc6cbb763124d13bb0193546618.setContent(html_7331df798306e2cc73f0386f771ed40b);
+            
+        
+
+        marker_dd357d1cec4b51c79a43d020c31344d4.bindPopup(popup_afbc6bc6cbb763124d13bb0193546618)
+        ;
+
+        
+    
+    
+            marker_dd357d1cec4b51c79a43d020c31344d4.bindTooltip(
+                `<div>
+                     Maize - R0129
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4b230418385905432d8fddfab7a54224 = L.marker(
+                [-0.223132, 37.989482],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_535d4f53523097f98ca8d819da81d290 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ed2e1a5e98abbebde624baf7d709ad2b = $(`<div id="html_ed2e1a5e98abbebde624baf7d709ad2b" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0130<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 2.3 ha<br>     <b>Yield:</b> 1342.2 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_535d4f53523097f98ca8d819da81d290.setContent(html_ed2e1a5e98abbebde624baf7d709ad2b);
+            
+        
+
+        marker_4b230418385905432d8fddfab7a54224.bindPopup(popup_535d4f53523097f98ca8d819da81d290)
+        ;
+
+        
+    
+    
+            marker_4b230418385905432d8fddfab7a54224.bindTooltip(
+                `<div>
+                     Maize - R0130
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e2565cf1af0f6bba3a7567a497179720 = L.marker(
+                [-0.456472, 38.225013],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_5cf5fc0c9e64cc296c5a6275e9180bdf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9727aeed3094e725ff65cdf4258dd891 = $(`<div id="html_9727aeed3094e725ff65cdf4258dd891" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0131<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 0.56 ha<br>     <b>Yield:</b> 711.7 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_5cf5fc0c9e64cc296c5a6275e9180bdf.setContent(html_9727aeed3094e725ff65cdf4258dd891);
+            
+        
+
+        marker_e2565cf1af0f6bba3a7567a497179720.bindPopup(popup_5cf5fc0c9e64cc296c5a6275e9180bdf)
+        ;
+
+        
+    
+    
+            marker_e2565cf1af0f6bba3a7567a497179720.bindTooltip(
+                `<div>
+                     Maize - R0131
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bd27db81f452ef27f7a829964260e799 = L.marker(
+                [-0.94473, 36.844988],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_ccec44a2da15a957c9296987c6529595 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c15f25c7a59a9c76f32eb99e834c55dd = $(`<div id="html_c15f25c7a59a9c76f32eb99e834c55dd" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0132<br>     <b>Crop:</b> Vegetables<br>     <b>Farm size:</b> 4.98 ha<br>     <b>Yield:</b> 2006.9 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_ccec44a2da15a957c9296987c6529595.setContent(html_c15f25c7a59a9c76f32eb99e834c55dd);
+            
+        
+
+        marker_bd27db81f452ef27f7a829964260e799.bindPopup(popup_ccec44a2da15a957c9296987c6529595)
+        ;
+
+        
+    
+    
+            marker_bd27db81f452ef27f7a829964260e799.bindTooltip(
+                `<div>
+                     Vegetables - R0132
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0eab96fbd7e68939cfd632aa8aa6868e = L.marker(
+                [-1.200337, 36.938957],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_e46f81d4fb06b5323a96133e15cc2099 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5b7252d8ef1a7dc66f04927759bef729 = $(`<div id="html_5b7252d8ef1a7dc66f04927759bef729" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0133<br>     <b>Crop:</b> Tea<br>     <b>Farm size:</b> 0.73 ha<br>     <b>Yield:</b> 338.9 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_e46f81d4fb06b5323a96133e15cc2099.setContent(html_5b7252d8ef1a7dc66f04927759bef729);
+            
+        
+
+        marker_0eab96fbd7e68939cfd632aa8aa6868e.bindPopup(popup_e46f81d4fb06b5323a96133e15cc2099)
+        ;
+
+        
+    
+    
+            marker_0eab96fbd7e68939cfd632aa8aa6868e.bindTooltip(
+                `<div>
+                     Tea - R0133
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_700bd7b35ecbc97441dd3df7b05f6aa0 = L.marker(
+                [-0.655962, 36.234955],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_e35ce1f5c7766f5d6fab3bd67774b71c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a9ac79490baa25f3ce0ed9595e1038f2 = $(`<div id="html_a9ac79490baa25f3ce0ed9595e1038f2" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0134<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 1.71 ha<br>     <b>Yield:</b> 814.7 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_e35ce1f5c7766f5d6fab3bd67774b71c.setContent(html_a9ac79490baa25f3ce0ed9595e1038f2);
+            
+        
+
+        marker_700bd7b35ecbc97441dd3df7b05f6aa0.bindPopup(popup_e35ce1f5c7766f5d6fab3bd67774b71c)
+        ;
+
+        
+    
+    
+            marker_700bd7b35ecbc97441dd3df7b05f6aa0.bindTooltip(
+                `<div>
+                     Coffee - R0134
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_971b6fdf393d7e5722a941aacbcf1957 = L.marker(
+                [0.857274, 37.4457],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_bc7a6f3ea4d9281aa3c66ce3acd3f252 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3a2b0a7a35a2071d55b6557851774a8f = $(`<div id="html_3a2b0a7a35a2071d55b6557851774a8f" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0135<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 3.02 ha<br>     <b>Yield:</b> 413.8 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_bc7a6f3ea4d9281aa3c66ce3acd3f252.setContent(html_3a2b0a7a35a2071d55b6557851774a8f);
+            
+        
+
+        marker_971b6fdf393d7e5722a941aacbcf1957.bindPopup(popup_bc7a6f3ea4d9281aa3c66ce3acd3f252)
+        ;
+
+        
+    
+    
+            marker_971b6fdf393d7e5722a941aacbcf1957.bindTooltip(
+                `<div>
+                     Beans - R0135
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_085e66e7197a4e794e2bc4910494606e = L.marker(
+                [-0.691993, 36.089856],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_19fddd0765813e39d0a96c80a3d734ac = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0d2ce044fb5ceddbd7f6e791affe9193 = $(`<div id="html_0d2ce044fb5ceddbd7f6e791affe9193" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0136<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 1.1 ha<br>     <b>Yield:</b> 921.0 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_19fddd0765813e39d0a96c80a3d734ac.setContent(html_0d2ce044fb5ceddbd7f6e791affe9193);
+            
+        
+
+        marker_085e66e7197a4e794e2bc4910494606e.bindPopup(popup_19fddd0765813e39d0a96c80a3d734ac)
+        ;
+
+        
+    
+    
+            marker_085e66e7197a4e794e2bc4910494606e.bindTooltip(
+                `<div>
+                     Maize - R0136
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f6b1b5b1b1b72474151a0fcc1d5c284d = L.marker(
+                [-0.203023, 37.163995],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_eceb83084c744e0bd5cff5b785121703 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_50247cad4f4a80b5c718e61bfd55d078 = $(`<div id="html_50247cad4f4a80b5c718e61bfd55d078" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0137<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 1.77 ha<br>     <b>Yield:</b> 1046.7 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_eceb83084c744e0bd5cff5b785121703.setContent(html_50247cad4f4a80b5c718e61bfd55d078);
+            
+        
+
+        marker_f6b1b5b1b1b72474151a0fcc1d5c284d.bindPopup(popup_eceb83084c744e0bd5cff5b785121703)
+        ;
+
+        
+    
+    
+            marker_f6b1b5b1b1b72474151a0fcc1d5c284d.bindTooltip(
+                `<div>
+                     Beans - R0137
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_04f8d42181412808bd63fe7c75cbddb0 = L.marker(
+                [0.257547, 37.356612],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_dc17450e4571cf32d83fde356213bf5a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_88bb5b98e9cb56ba88fb3bd5dea00ce7 = $(`<div id="html_88bb5b98e9cb56ba88fb3bd5dea00ce7" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0138<br>     <b>Crop:</b> Vegetables<br>     <b>Farm size:</b> 4.26 ha<br>     <b>Yield:</b> 1123.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_dc17450e4571cf32d83fde356213bf5a.setContent(html_88bb5b98e9cb56ba88fb3bd5dea00ce7);
+            
+        
+
+        marker_04f8d42181412808bd63fe7c75cbddb0.bindPopup(popup_dc17450e4571cf32d83fde356213bf5a)
+        ;
+
+        
+    
+    
+            marker_04f8d42181412808bd63fe7c75cbddb0.bindTooltip(
+                `<div>
+                     Vegetables - R0138
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0201c5b5c464de04629a71c05b0a6c87 = L.marker(
+                [-0.590926, 36.716353],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_7a96978bd1ded0c11f77f6e2826d4d66 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_730f46e3e17af7dcdf429127b2bdde10 = $(`<div id="html_730f46e3e17af7dcdf429127b2bdde10" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0139<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 2.12 ha<br>     <b>Yield:</b> 253.8 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_7a96978bd1ded0c11f77f6e2826d4d66.setContent(html_730f46e3e17af7dcdf429127b2bdde10);
+            
+        
+
+        marker_0201c5b5c464de04629a71c05b0a6c87.bindPopup(popup_7a96978bd1ded0c11f77f6e2826d4d66)
+        ;
+
+        
+    
+    
+            marker_0201c5b5c464de04629a71c05b0a6c87.bindTooltip(
+                `<div>
+                     Beans - R0139
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ca755e8fb014010b004f4bf51799ddd9 = L.marker(
+                [0.929455, 37.477083],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_8fdefc4fd6baa0777af6f98c329a4073 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_24dab567a4cd72286b208b5dc3590371 = $(`<div id="html_24dab567a4cd72286b208b5dc3590371" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0140<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 1.79 ha<br>     <b>Yield:</b> 298.6 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_8fdefc4fd6baa0777af6f98c329a4073.setContent(html_24dab567a4cd72286b208b5dc3590371);
+            
+        
+
+        marker_ca755e8fb014010b004f4bf51799ddd9.bindPopup(popup_8fdefc4fd6baa0777af6f98c329a4073)
+        ;
+
+        
+    
+    
+            marker_ca755e8fb014010b004f4bf51799ddd9.bindTooltip(
+                `<div>
+                     Beans - R0140
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_21a577537efc0015cfba9c7cb63ce66e = L.marker(
+                [0.906118, 36.076251],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_39437c7533a38a0e6da9250e1382ab01 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_79ac583aca2e72ef83778da8c34af3fc = $(`<div id="html_79ac583aca2e72ef83778da8c34af3fc" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0141<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 0.35 ha<br>     <b>Yield:</b> 352.9 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_39437c7533a38a0e6da9250e1382ab01.setContent(html_79ac583aca2e72ef83778da8c34af3fc);
+            
+        
+
+        marker_21a577537efc0015cfba9c7cb63ce66e.bindPopup(popup_39437c7533a38a0e6da9250e1382ab01)
+        ;
+
+        
+    
+    
+            marker_21a577537efc0015cfba9c7cb63ce66e.bindTooltip(
+                `<div>
+                     Beans - R0141
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_56faf71bc94d2bb2d70590cd29ab80b6 = L.marker(
+                [-0.870544, 36.09337],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_2265e3fcc1ed976698179baee0552535 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_10a79866d4bf165df5c298c714abc6ea = $(`<div id="html_10a79866d4bf165df5c298c714abc6ea" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0142<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 0.64 ha<br>     <b>Yield:</b> 536.5 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_2265e3fcc1ed976698179baee0552535.setContent(html_10a79866d4bf165df5c298c714abc6ea);
+            
+        
+
+        marker_56faf71bc94d2bb2d70590cd29ab80b6.bindPopup(popup_2265e3fcc1ed976698179baee0552535)
+        ;
+
+        
+    
+    
+            marker_56faf71bc94d2bb2d70590cd29ab80b6.bindTooltip(
+                `<div>
+                     Beans - R0142
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_33311bf6cf1f08a215ba8cedc4f0621d = L.marker(
+                [-0.256879, 38.056501],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_f9823a8d1b55386c763bdc2953e671a6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_57b21e11de3e07b61a417c136c1586a7 = $(`<div id="html_57b21e11de3e07b61a417c136c1586a7" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0143<br>     <b>Crop:</b> Potatoes<br>     <b>Farm size:</b> 3.12 ha<br>     <b>Yield:</b> 719.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_f9823a8d1b55386c763bdc2953e671a6.setContent(html_57b21e11de3e07b61a417c136c1586a7);
+            
+        
+
+        marker_33311bf6cf1f08a215ba8cedc4f0621d.bindPopup(popup_f9823a8d1b55386c763bdc2953e671a6)
+        ;
+
+        
+    
+    
+            marker_33311bf6cf1f08a215ba8cedc4f0621d.bindTooltip(
+                `<div>
+                     Potatoes - R0143
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_be7d66dff03ae910a0a5d48bba8297f8 = L.marker(
+                [-0.747804, 36.900477],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_a9db5568e91cda58b146d4552885732c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f17567ce9cb6c1089db7a9679a906796 = $(`<div id="html_f17567ce9cb6c1089db7a9679a906796" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0144<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 2.13 ha<br>     <b>Yield:</b> 1258.0 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_a9db5568e91cda58b146d4552885732c.setContent(html_f17567ce9cb6c1089db7a9679a906796);
+            
+        
+
+        marker_be7d66dff03ae910a0a5d48bba8297f8.bindPopup(popup_a9db5568e91cda58b146d4552885732c)
+        ;
+
+        
+    
+    
+            marker_be7d66dff03ae910a0a5d48bba8297f8.bindTooltip(
+                `<div>
+                     Coffee - R0144
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_916510ea0549ccd47aa389a9bb57e439 = L.marker(
+                [-0.787899, 36.317651],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_a28b899f480a89a480500d3d328ce8d4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2cd2f0d2cbe6b4c8c1d5fc1da7c30599 = $(`<div id="html_2cd2f0d2cbe6b4c8c1d5fc1da7c30599" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0145<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 2.4 ha<br>     <b>Yield:</b> 310.0 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_a28b899f480a89a480500d3d328ce8d4.setContent(html_2cd2f0d2cbe6b4c8c1d5fc1da7c30599);
+            
+        
+
+        marker_916510ea0549ccd47aa389a9bb57e439.bindPopup(popup_a28b899f480a89a480500d3d328ce8d4)
+        ;
+
+        
+    
+    
+            marker_916510ea0549ccd47aa389a9bb57e439.bindTooltip(
+                `<div>
+                     Maize - R0145
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_38b653d3626891fe18c2a2d676c42cfe = L.marker(
+                [-1.407783, 37.305608],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_e2c15c80b3db7a4a5f6ea7f1c7a33e10 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_15762fdcd96221e5da27e19c6158609b = $(`<div id="html_15762fdcd96221e5da27e19c6158609b" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0146<br>     <b>Crop:</b> Maize<br>     <b>Farm size:</b> 2.24 ha<br>     <b>Yield:</b> 157.4 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_e2c15c80b3db7a4a5f6ea7f1c7a33e10.setContent(html_15762fdcd96221e5da27e19c6158609b);
+            
+        
+
+        marker_38b653d3626891fe18c2a2d676c42cfe.bindPopup(popup_e2c15c80b3db7a4a5f6ea7f1c7a33e10)
+        ;
+
+        
+    
+    
+            marker_38b653d3626891fe18c2a2d676c42cfe.bindTooltip(
+                `<div>
+                     Maize - R0146
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_da7df6c1197cf2324c86996bd7d46c40 = L.marker(
+                [0.023911, 37.924984],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_6229e47f51c898cd5e1446dd1eddbc6c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b2e2b281943bbc51cf40adb93847f93c = $(`<div id="html_b2e2b281943bbc51cf40adb93847f93c" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0147<br>     <b>Crop:</b> Beans<br>     <b>Farm size:</b> 3.79 ha<br>     <b>Yield:</b> 4629.3 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_6229e47f51c898cd5e1446dd1eddbc6c.setContent(html_b2e2b281943bbc51cf40adb93847f93c);
+            
+        
+
+        marker_da7df6c1197cf2324c86996bd7d46c40.bindPopup(popup_6229e47f51c898cd5e1446dd1eddbc6c)
+        ;
+
+        
+    
+    
+            marker_da7df6c1197cf2324c86996bd7d46c40.bindTooltip(
+                `<div>
+                     Beans - R0147
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e10955cb060f8aba996b6816e6aed896 = L.marker(
+                [-0.243302, 36.539553],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_b5e3f8c433a1e2f109f30f5920b6d79f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2a12f9f1c2e3f6b46f8b5d2053beb3fe = $(`<div id="html_2a12f9f1c2e3f6b46f8b5d2053beb3fe" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0148<br>     <b>Crop:</b> Coffee<br>     <b>Farm size:</b> 1.1 ha<br>     <b>Yield:</b> 240.3 kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_b5e3f8c433a1e2f109f30f5920b6d79f.setContent(html_2a12f9f1c2e3f6b46f8b5d2053beb3fe);
+            
+        
+
+        marker_e10955cb060f8aba996b6816e6aed896.bindPopup(popup_b5e3f8c433a1e2f109f30f5920b6d79f)
+        ;
+
+        
+    
+    
+            marker_e10955cb060f8aba996b6816e6aed896.bindTooltip(
+                `<div>
+                     Coffee - R0148
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4148c40f209c3c6b6a40d1caa4f6921f = L.marker(
+                [-1.371303, 37.557226],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_c0ee8d4064a77aca8a0626bd5084175c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_36c9beb9e8483b67cd20c7334693b061 = $(`<div id="html_36c9beb9e8483b67cd20c7334693b061" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0149<br>     <b>Crop:</b> nan<br>     <b>Farm size:</b> 1.49 ha<br>     <b>Yield:</b> 1411.9 kg<br>     <b>Irrigation:</b> No     </div>`)[0];
+                popup_c0ee8d4064a77aca8a0626bd5084175c.setContent(html_36c9beb9e8483b67cd20c7334693b061);
+            
+        
+
+        marker_4148c40f209c3c6b6a40d1caa4f6921f.bindPopup(popup_c0ee8d4064a77aca8a0626bd5084175c)
+        ;
+
+        
+    
+    
+            marker_4148c40f209c3c6b6a40d1caa4f6921f.bindTooltip(
+                `<div>
+                     nan - R0149
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c5d9d3425893c16aaab82249fd201177 = L.marker(
+                [-0.803384, 36.213369],
+                {
+}
+            ).addTo(marker_cluster_c28438d56868057b5024f6cbf46e25f1);
+        
+    
+        var popup_1a5b1f1730c5d6f51c196736a4a33166 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_219b022178c5066116ab9b7551bdf689 = $(`<div id="html_219b022178c5066116ab9b7551bdf689" style="width: 100.0%; height: 100.0%;">     <b>Respondent:</b> R0150<br>     <b>Crop:</b> Tea<br>     <b>Farm size:</b> nan ha<br>     <b>Yield:</b> nan kg<br>     <b>Irrigation:</b> Yes     </div>`)[0];
+                popup_1a5b1f1730c5d6f51c196736a4a33166.setContent(html_219b022178c5066116ab9b7551bdf689);
+            
+        
+
+        marker_c5d9d3425893c16aaab82249fd201177.bindPopup(popup_1a5b1f1730c5d6f51c196736a4a33166)
+        ;
+
+        
+    
+    
+            marker_c5d9d3425893c16aaab82249fd201177.bindTooltip(
+                `<div>
+                     Tea - R0150
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_c28438d56868057b5024f6cbf46e25f1.addTo(map_fab0dc14c929ba52c31118537b5a6b40);
+        
+</script>
+</html>
