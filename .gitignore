@@ -1,0 +1,32 @@
+# Sensitive files
+*.env
+05_send_email.py
+
+# Large or regenerable files
+data/
+cleaned/
+outputs/
+*.csv
+*.xlsx
+*.docx
+*.html
+*.png
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
